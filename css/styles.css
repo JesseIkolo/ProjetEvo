@@ -107,3 +107,19 @@ div.block span{
 #block_trois{
    position: relative;
 }
+
+body{
+   background-color: rgb(169, 169, 202);
+}
+
+div#titre{
+   font-size: 50px;
+   font-family: Helvetica;
+   font-style: italic;
+   font-weight: bolder;
+   background-color: rgb(19, 31, 27);
+   color: rgb(102, 241, 176);
+   text-align: center;
+   border: 2px solid rgb(44, 205, 233) ;
+   border-radius: 20px;
+}
