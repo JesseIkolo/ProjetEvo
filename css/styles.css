@@ -4,8 +4,8 @@
 
 body {
    /* border : 1px solid red; */
-   font-family : sans-serif
-
+   font-family : sans-serif;
+   box-sizing: border-box;
 }
 
 h2{
