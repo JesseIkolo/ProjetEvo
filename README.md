@@ -1,2 +1,2 @@
 # ProjetEvo
-Projet Témoin du cours de Développement Web HTML/CSS/Javascript
+Projet page ( dribbble ) du cours de Développement Web HTML/CSS/Javascript
