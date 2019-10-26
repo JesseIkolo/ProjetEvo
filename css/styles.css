@@ -1,109 +1,128 @@
-*,*::before,*:after{
-   box-sizing : content-box
-}
-
-body {
-   /* border : 1px solid red; */
-   font-family : sans-serif
-
-}
-
-h2{
-   color: blue
-}
-
-.titre3{
-   color : yellow
-}
-
-#paragraphe{
-}
-[atttr='i']{
-   font-size : 28px
+*{
+   padding: 0;
+   margin: 0;
+   font-family: "Century Gothic";
 }
 
 header{
-   background-color: black;
-   display : block;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center center;
+   background: linear-gradient(white, rgba(236, 239, 241));
+}
+
+
+
+header .status{
+   padding: 10px 5%;
+   display: inline-block;
+   text-align: right;
+   width: 80%;
+   position: relative;
+}
+
+header .status .statusImage img{
+   width: 20px;
+   height: 20px;
+   margin-left: -70px;
+   position: absolute;
+}
+
+header .status .statusInfo p{
+   font-size: 14px;
+}
+
+header .menu{
+   padding: 15px 10%;
+   width: 80%;
+   display: inline-block;
+}
+
+header .menu .logo{
+   width: 20%;
+   float: left;
+}
+
+header .menu .logo img{
+   width: 60px;
    height: 60px;
 }
 
-.exemple{
-   margin-bottom: 50px;
+header .menu .liens{
+   margin-left: 20%;
+   width: 80%;
+   list-style: none;
 }
 
-.exemple_text{
-   margin: 20px;
-}
-.parent{
-   margin: 20px;
-   border : 2px solid grey;
-   min-height: 180px;
-   border-radius : 10px;
-   position: relative;
+header .menu .liens .liensUtils{
+   display: inline-block;
+   width: 100%;
+   text-align: right;
 }
 
-
-div.block{
-   width : auto;
-   height : auto;
-   background: black;
-   float: right;
-   margin: 15px;
-   color: bisque;
-   text-align: left;
-   font-family: 'Courier New', Courier, monospace;
-   padding: 10px;
-   border-radius: 8px;
+header .menu .liens .liensUtils a{
+   text-decoration: none;
+   padding: 8px 1%;
+   color: inherit;
+   font-weight: bold;
 }
 
-#parent_marge{
-   /* margin : auto; */
+header .menu .liens .liensUtils a:hover{
+   border-bottom: 2px solid rgb(7, 236, 7);
 }
 
-#parent_marge .block{
-   float: inherit;
-   width: 150px;
-   margin : 30px auto
+header .menu .liens .liensUtils a.lienGetStartet{
+   padding: 6px 15px;
+   border: 2px solid rgb(7, 236, 7);
+   border-radius: 15px;
+   margin-left: 3%;
+   text-transform: uppercase;
 }
 
-#parent_flex{
-   display: flex;
-   justify-content : center;
-   align-items: center;
+header .menu .liens .liensUtils a.lienGetStartet:hover{
+   border: 2px solid;
 }
 
-#parent_flex .block{
-   width: auto;
+header .getTech{
+   margin-top: 60px;
+   padding: 10px 0;
 }
 
-#parent_flex .block{
-   width: auto;
+header .getTech p{
+   font-size: 30px;
+   text-align: center;
 }
 
-div.block span.element{
-   color : red
+header .faster{
+   padding: 10px 0;
 }
 
-div.block span{
-   font-weight: 600;
-   color: honeydew;
-   font-size: 90%;
-   padding-right: 5px;
-   /* display: block; */
+header .faster p{
+   font-size: 60px;
+   font-weight: bold;
+   text-align: center;
 }
 
-#block_un{
-   position: absolute;
-   left : 0;
-   bottom: 0;
+header .onglet{
+   margin-top: 100px;
+   width: 100%;
+   justify-content: space-between;
+   flex-direction: row;
+   text-align: center;
+   padding: 15px 0;
 }
 
-#block_deux{
-   position: fixed;
-   left : 0;
-   bottom: 0;
+header .onglet a{
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   padding: 15px 2%;
+   font-weight: bold;
 }
-#block_trois{
-   position: relative;
+
+header .onglet a:hover{
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   background-color: white;
 }
