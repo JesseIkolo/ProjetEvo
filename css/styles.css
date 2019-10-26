@@ -1,0 +1,24 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width:100% ;
+    height: 100%;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+a,a:hover,a:visited{
+    text-decoration:none;
+}
+.topBar{
+   border: 1px solid red;
+   max-width: 1024px;
+   margin: 0 auto; 
+   display: flex;
+   justify-content: space-between;
+}
+.topBar .logo{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(2, 181, 252);
+}
