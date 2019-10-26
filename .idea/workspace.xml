@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ed7b8c7b-6f42-494a-af84-f8acab989869" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="e594f69a-bc97-43a9-b5e7-0492123e9e1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/pdfs/github-git-cheat-sheet.pdf" beforeDir="false" />
+    </list>
+>>>>>>> Jesse
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +23,7 @@
       <executable />
     </execution>
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -20,6 +31,30 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Stark\Desktop\Projects\Git\ProjetEvo" />
+    </key>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Youta-Obby-Sidane" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1SgzD0ivmPjdrzhvq3noCOKrNRz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+>>>>>>> Jesse
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stark\Desktop\Projects\Git\ProjetEvo\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -43,8 +78,13 @@
       <created>1572090692281</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1572090692281</updated>
       <workItem from="1572090741612" duration="3568000" />
+=======
+      <updated>1571999911853</updated>
+      <workItem from="1571999939330" duration="1639000" />
+>>>>>>> Jesse
     </task>
     <servers />
   </component>
