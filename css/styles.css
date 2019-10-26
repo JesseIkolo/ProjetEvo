@@ -1,0 +1,51 @@
+*,* ::before,*::after{
+   box-sizing: border-box;
+}
+html, body {
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   font-size: 13px;
+}
+a,a:hover ,a :visited{
+   text-decoration: none;
+   color : inherit
+}
+.topBar{
+   border : 1 px solid red ;
+   width: 100%;
+   max-width: 1024px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   padding: 2em 0 0 0
+}
+.topBar .logo{
+   width:  90px;
+   height: 30px;
+   background-color: rgb(2, 181, 252);
+   display: flex;
+   align-items: center;
+ 
+}
+
+   .topBar .navigation{
+      width: calc(100% - 90px - 100px);
+   }
+
+   .topBar .navigation .navlink{
+      margin-right: 10px;
+      font-family:  helvetica,Arial,Sans-serif;
+      display: flex;
+   }
+
+
+
+.topBar  .navigation .zSignIn{
+   position: absolute;
+   top: 0,5em;
+   right: 50px;
+   width: 50px;
+   display: block;
+}
