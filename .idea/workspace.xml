@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e594f69a-bc97-43a9-b5e7-0492123e9e1d" name="Default Changelist" comment="">
-<<<<<<< Updated upstream
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
->>>>>>> Stashed changes
-    </list>
+    <list default="true" id="ed7b8c7b-6f42-494a-af84-f8acab989869" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,17 +13,14 @@
       <executable />
     </execution>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1SgzD0ivmPjdrzhvq3noCOKrNRz" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stark\Desktop\Projects\Git\ProjetEvo" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,26 +39,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e594f69a-bc97-43a9-b5e7-0492123e9e1d" name="Default Changelist" comment="" />
-      <created>1571999911853</created>
+      <changelist id="ed7b8c7b-6f42-494a-af84-f8acab989869" name="Default Changelist" comment="" />
+      <created>1572090692281</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1571999911853</updated>
-<<<<<<< Updated upstream
-      <workItem from="1571999939330" duration="241000" />
-=======
-      <workItem from="1571999939330" duration="2894000" />
-      <workItem from="1572015967549" duration="249000" />
->>>>>>> Stashed changes
+      <updated>1572090692281</updated>
+      <workItem from="1572090741612" duration="3264000" />
     </task>
-    <task id="LOCAL-00001" summary="Git initial Youta">
-      <created>1572001681628</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572001681628</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,16 +56,10 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Git initial Youta" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git initial Youta" />
   </component>
 </project>
