@@ -72,51 +72,220 @@ nav > ul li:hover .sous{
 }
 */
 
-*,*::before,*::after{
-   box-sizing: border-box;
-}
-
-html,body{
+*{
    padding: 0;
-   margin : 0;
+   margin: 0;
+   font-family: "Century Gothic";
+}
+
+header{
    width: 100%;
-   height: 100%;
-   font-size: 16px;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center center;
+   background: linear-gradient(white, rgba(236, 239, 241));
 }
 
-a,a:hover,a:visited{
-   text-decoration: none;
-   color : inherit
-}
-.topBar{
-   /* border : 1px solid red; */
-   width : 100%;
-   max-width: 1024px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-between;
-   padding: 2.25em 0 0 0
-}
-.topBar .logo{
-   width: 90px;
-   height : 30px;
-   background-color: rgb(2, 181, 252);
-}
-.topBar .navigation{
-   width: calc(100% - 90px - 100px);
-   display: flex;
-   align-items: center
+
+
+header .status{
+   padding: 10px 5%;
+   display: inline-block;
+   text-align: right;
+   width: 80%;
+   position: relative;
 }
 
-.topBar .navigation .navLink{
-   margin-right: 10px;
-   font-family: Helvetica,Arial, sans-serif;
-   display: flex
-}
-.topBar .navigation .signIn{
+header .status .statusImage img{
+   width: 20px;
+   height: 20px;
+   margin-left: -65px;
    position: absolute;
-   top : 0.5em;
-   right: 50px;
-   width: 50px;
-   display : block;
+}
+
+header .status .statusInfo p{
+   font-size: 14px;
+}
+
+header .menu{
+   padding: 15px 10%;
+   width: 80%;
+   display: inline-block;
+}
+
+header .menu .logo{
+   width: 20%;
+   float: left;
+}
+
+header .menu .logo img{
+   width: 70px;
+   height: 50px;
+}
+
+header .menu .liens{
+   margin-left: 20%;
+   width: 80%;
+   list-style: none;
+}
+
+header .menu .liens .liensUtils{
+   display: inline-block;
+   width: 100%;
+   text-align: right;
+}
+
+header .menu .liens .liensUtils a{
+   text-decoration: none;
+   padding: 8px 1%;
+   color: inherit;
+   font-weight: bold;
+}
+
+header .menu .liens .liensUtils a:hover{
+   border-bottom: 2px solid rgb(7, 236, 7);
+}
+
+header .menu .liens .liensUtils a.lienGetStartet{
+   padding: 6px 15px;
+   border: 2px solid rgb(7, 236, 7);
+   border-radius: 15px;
+   margin-left: 3%;
+   text-transform: uppercase;
+}
+
+header .menu .liens .liensUtils a.lienGetStartet:hover{
+   border: 2px solid;
+}
+
+header .getTech{
+   margin-top: 60px;
+   padding: 10px 0;
+}
+
+header .getTech p{
+   font-size: 30px;
+   text-align: center;
+}
+
+header .faster{
+   padding: 10px 0;
+}
+
+header .faster p{
+   font-size: 60px;
+   font-weight: bold;
+   text-align: center;
+}
+
+header .onglet{
+   margin-top: 100px;
+   width: 100%;
+   justify-content: space-between;
+   flex-direction: row;
+   text-align: center;
+   padding: 15px 0;
+}
+
+header .onglet a{
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   padding: 15px 2%;
+   font-weight: bold;
+}
+
+header .onglet a:hover{
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   background-color: white;
+}
+
+section {
+   width: 100%;
+   text-align: center;
+   margin-top: 70px;
+}
+
+section .select{
+   margin-top: 60px;
+   padding: 10px 0;
+}
+
+section .select p{
+   font-size: 60px;
+   font-weight: bold;
+   text-align: center;
+}
+
+section .choose{
+   margin-top: 20px;
+   padding: 10px 0;
+}
+
+section .choose p{
+   font-size: 20px;
+   text-align: center;
+}
+
+.wrapper{
+   width: 900px;
+   margin: 5% auto;
+}
+.single-price{
+   width: 33%;
+   background:  linear-gradient(white, rgba(236, 239, 241));
+   float: left;
+   margin-top: 2%;
+   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+   text-align: center;
+   transition: 0.9s;
+}
+.price{
+   width: 100px;
+   height: 100px;
+   margin: 5% auto 0 auto;
+   text-align: center;
+}
+.single-price h1{
+   font-size: 18px;
+   line-height: 4;
+   text-transform: uppercase;
+}
+.price h2{
+   font-size: 38px;
+   color: #fff;
+}
+.deals h4{
+   font-size: 14px;
+   font-weight: normal;
+   text-align: center;
+   line-height: 1;
+}
+.single-price:hover{
+   background: #fff;
+   color: black;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+   transform: scale(1.1);
+   z-index: 1;
+   border: 2px solid rgb(7, 236, 7);
+}
+.single-price:hover h1{
+   color:rgb(7, 236, 7);
+}
+.single-price:hover .price{
+   border-color: #fff;
+}
+.single-price a{
+   text-decoration: none;
+   background: rgb(35, 159, 200);
+   color: #fff;
+   padding: 10px 60px;
+   display: inline-block;
+   margin: 10% auto;
+   font-weight: bold;
+}
+.single-price:hover a{
+   background: rgb(7, 236, 7);
+   color: #fff;
 }
