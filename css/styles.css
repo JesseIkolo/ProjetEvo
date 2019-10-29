@@ -108,7 +108,7 @@ header .status .statusInfo p{
 }
 
 header .menu{
-   padding: 15px 10%;
+   padding: 12px 10%;
    width: 80%;
    display: inline-block;
 }
@@ -290,6 +290,7 @@ section .choose p{
    background: rgb(7, 236, 7);
    color: #fff;
 }
+<<<<<<< HEAD
 
 bord{
    width: 80%;
@@ -298,4 +299,13 @@ bord{
    bottom: 0;
    display: none;
    background: olive;
+=======
+bord{
+   widows: 80%;
+   height: 3px;
+   position: absolute;
+   bottom: 0%;
+   display:none ;
+   background: orange;
+>>>>>>> af1b313347ed07f043246edc7ae4c68f23bf0844
 }
