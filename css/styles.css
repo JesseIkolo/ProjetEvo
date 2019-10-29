@@ -81,7 +81,7 @@ a[href = "active"]{
 
 .navLink:hover{
    color: #98a4ae;
-   border-bottom: 2px solid  #2bd55c;
+   border-bottom: 2px solidc#2bd55c;
    transition: color 2s;
    transition: border-bottom 0.3s;
 }
@@ -91,7 +91,7 @@ a[href = "active"]{
    border-radius: 10px 10px 10px 10px;
    padding: 10px;
    margin-right: 0;
-   box-shadow: 2px 2px rgba(43,213,92,0.5);
+
 }
 
 .header{
@@ -221,7 +221,7 @@ span.boxSubTitle, span.boxFooter{
 
  div.boxButton{
    border: 0 solid #57c2f4;
-   border-radius: 6px 6px 6px 6px;
+   border-radius: 10px 10px 10px 10px;
    background-color: #57c2f4;
    padding: 5px;
    margin: auto;
