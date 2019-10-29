@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 html,body{
     padding: 0;
     margin: 0;
@@ -21,4 +22,77 @@ a,a:hover,a:visited{
     width: 90px;
     height: 30px;
     background-color: rgb(2, 181, 252);
+=======
+body,html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.top{
+    margin-top:10px; 
+}
+a,a:hover,a:active{
+    text-decoration: none;
+    font-family: century;
+    color: black;
+}
+.signIn{
+    position: relative;
+    float: right;
+    font-size: 10px;
+    width: auto;
+    height: auto;
+    margin-right:10%;
+     right: 40px;
+}
+.navigation{
+    margin-top: 20px;
+    position: relative;
+    clear: both;
+    float: right;
+    top: -60px;
+    margin-right: 10%;;
+}
+.header{
+    position: relative;
+    margin-top: 100px;   
+    width: auto;
+    height: auto;
+    clear: both;
+    text-align: center;
+}
+.img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top:3px;
+}
+.logo{
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background-color: aqua;
+    left: 10%;
+    clear: both;
+}
+.navLink{
+    margin-right: 30px;
+    font-size: 14px;
+    padding: 10px;
+
+}
+.navLink:hover{
+    border-radius: 20px;
+    border: 2px solid green;
+}
+h4{
+    font-family: calibri;
+    font-size: 40;
+}
+h1{
+    font-family: calibri;
+    font-size: 60;
+>>>>>>> Stashed changes
 }
