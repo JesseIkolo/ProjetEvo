@@ -1,46 +1,97 @@
-*,*::before,*::after{
+*{
     box-sizing: border-box;
-}
-html,body {
-    padding:0;
-    margin:0;
-    width:100%;
-    height:100%;
-    font-size:16px
-}
-a,a:hover,a:visited{
-    text-decoration: none;
-    color:inherit
-}
-.topBar{
-   /* border:1px solid red;*/
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 0
-}
-.topBar .logo{
-    width: 30px;
-    height: 30px;
-    background-color: rgb(2, 181, 252);
-    
-}
-.topBar .navigation{
-    width: calc(100% - 90px -100px);
-    display: flex;
-    align-items: center
-}
-.topBar .navigation .Links{
-margin-right: 10px;
-font-family:  Helvetica,Arial, sans-serif;
-
-}
-.topBar .navigation .signIn{
+ }
+ 
+ .Header-Entete{
+ background: linear-gradient(#FFFEFE, #CBD2D1);
+ position: relative;
+ width: 100%;
+ }
+ 
+ .sign_in {
     position: absolute;
-    top :0,em;
-    right: 50;
-    width: 50px;
-    display: block;
-}
+    right: 10%;
+ }
+ 
+ .sign_in > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #DBDBDB;
+ }
+ .Contenance_image_menu{
+    margin: 15px 50px 5px;
+ }
+ 
+ .text_kizen{
+    display: inline;
+    font-family: cursive;
+ }
+ 
+ .Conteneur_image_principal > img{
+    width: 40px;
+    position: relative;
+    top:10px
+ }
+ 
+ .menu_header{
+    position: absolute;
+    right: 10%;
+    top:25px
+ }
+ 
+ .menu_header > a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #000000;
+ }
+ 
+ .menu_header > a:hover{
+    text-decoration: underline;
+ }
+ 
+ .entete_suite{
+    margin-top: 70px;
+ }
+ 
+ .Ecrire_entete > p, h1{
+    text-align: center;
+    font-weight: bolder;
+ }
+ 
+ .footer_entete{
+    width: 100%;
+    text-align: center;
+ }
+ 
+ .footer_entete > a{
+    display: inline-block;
+    height: 70px;
+    width: 120px;
+    padding-top: 40px;
+    margin-top:20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 18px 18px 0px 0px ;
+ }
+ 
+ .footer_entete > a:hover{
+    display: inline-block;
+    height: 70px;
+    width: 120px;
+    background-color: #FFFFFF;
+    padding-top: 40px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 18px 18px 0px 0px ;
+    transition: all 0.7S;
+ }
+ 
+ .debut{  
+    width: 100%;
+    text-align: center;
+ }
+ .debut > h1{
+    margin-top: 40px;
+ }
