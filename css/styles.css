@@ -75,6 +75,9 @@ a[href = "active"]{
    border-bottom: 2px solid  #2bd55c;
 }
 
+.navLink{
+   
+}
 .navLink:hover{
    color: #98a4ae;
    border-bottom: 2px solid  #2bd55c;
