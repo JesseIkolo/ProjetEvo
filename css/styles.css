@@ -1,109 +1,183 @@
-*,*::before,*:after{
-   box-sizing : content-box
+*{
+   box-sizing: border-box;
 }
 
-body {
-   /* border : 1px solid red; */
-   font-family : sans-serif
-
+.Header-Entete{
+background: linear-gradient(#FFFEFE, #CBD2D1);
+position: relative;
+width: 100%;
 }
 
-h2{
-   color: blue
-}
-
-.titre3{
-   color : yellow
-}
-
-#paragraphe{
-}
-[atttr='i']{
-   font-size : 28px
-}
-
-header{
-   background-color: black;
-   display : block;
-   height: 60px;
-}
-
-.exemple{
-   margin-bottom: 50px;
-}
-
-.exemple_text{
-   margin: 20px;
-}
-.parent{
-   margin: 20px;
-   border : 2px solid grey;
-   min-height: 180px;
-   border-radius : 10px;
-   position: relative;
-}
-
-
-div.block{
-   width : auto;
-   height : auto;
-   background: black;
-   float: right;
-   margin: 15px;
-   color: bisque;
-   text-align: left;
-   font-family: 'Courier New', Courier, monospace;
-   padding: 10px;
-   border-radius: 8px;
-}
-
-#parent_marge{
-   /* margin : auto; */
-}
-
-#parent_marge .block{
-   float: inherit;
-   width: 150px;
-   margin : 30px auto
-}
-
-#parent_flex{
-   display: flex;
-   justify-content : center;
-   align-items: center;
-}
-
-#parent_flex .block{
-   width: auto;
-}
-
-#parent_flex .block{
-   width: auto;
-}
-
-div.block span.element{
-   color : red
-}
-
-div.block span{
-   font-weight: 600;
-   color: honeydew;
-   font-size: 90%;
-   padding-right: 5px;
-   /* display: block; */
-}
-
-#block_un{
+.sign_in {
    position: absolute;
-   left : 0;
-   bottom: 0;
+   right: 10%;
 }
 
-#block_deux{
-   position: fixed;
-   left : 0;
-   bottom: 0;
+.sign_in > a {
+   text-decoration: none;
+   font-weight: bold;
+   color: #DBDBDB;
 }
-#block_trois{
+.Contenance_image_menu{
+   margin: 15px 50px 5px;
+}
+
+.text_kizen{
+   display: inline;
+   font-family: cursive;
+}
+
+.Conteneur_image_principal > img{
+   width: 40px;
    position: relative;
+   top:10px
+}
+
+.menu_header{
+   position: absolute;
+   right: 10%;
+   top:25px
+}
+
+.menu_header > a{
+   text-decoration: none;
+   margin-left: 10px;
+   color: #000000;
+}
+
+.avant_soulignement{
+   position: relative;
+
+}
+
+
+.entete_suite{
+   margin-top: 70px;
+}
+
+.Ecrire_entete > p, h1{
+   text-align: center;
+   font-weight: bolder;
+}
+
+.footer_entete{
+   width: 100%;
+   text-align: center;
+}
+
+.footer_entete > a{
+   display: inline-block;
+   height: 60px;
+   width: 120px;
+   padding-top: 20px;
+   color: #000000;
+   text-decoration: none;
+   font-size: 1.1em;
+   border-radius: 5px 5px 0px 0px ;
+   margin-left: 20px;
+}
+
+.footer_entete > .active_footer{
+   display: inline-block;
+   height: 60px;
+   width: 120px;
+   padding-top: 20px;
+   margin-top:20px;
+   color: #000000;
+   text-decoration: none;
+   font-size: 1.1em;
+   border-radius: 5px 5px 0px 0px ;
+   background-color: #FFFFFF;
+   margin-bottom: -  20px;
+}
+
+
+.debut{  
+   width: 100%;
+   text-align: center;
+}
+.debut > h1{
+   margin-top: 40px;
+}
+
+.debut > p{
+   margin-top: -5px ;
+   width: 600px;
+   margin: 0 auto;
+}
+
+.div_bouton{
+   position: relative;
+}
+
+.button_gras{
+   font-weight: bold;
+}
+.Mon_button{
+   position: absolute;
+   right: 10%;
+   height: 35px;
+   border-radius: 50px;
+   background: none;
+   border: 2px solid #68C189;
+}
+
+.Mon_button:hover{
+   position: absolute;
+   right: 10%;
+   height: 35px;
+   border-radius: 50px;
+   background: #68C189;
+   border: 2px solid #68C189;
+   color: #FFFEFE;
+   transition: all 1s;
+}
+
+.conteneur_des_bloc{
+   width: 90%;
+   display: flex;
+   text-align: center;
+   align-content: space-between;
+   margin: 0 auto;
+   position: relative;
+   top: 60px;
+   margin-bottom: 200px;
+}
+
+.conteneur_des_bloc > .Mon_Div{
+   width: 24%;
+   background: #EBECF2;
+   margin-left: 20px;
+   border-radius:10px;
+} 
+
+.Element1_Mon_Div{
+   margin-bottom: -10px;
+}
+
+.Element2_Mon_Div{
+   color: #C7CBC9;
+   margin-bottom: -10px;
+}
+
+.Element4_Mon_Div{
+   line-height: 25px;
+}
+
+.Bouton_conteneur{
+   width: 120px;
+   height: 34px;
+   background:#A7EBE8;
+   border: none;
+   border-radius: 6px;
+}
+.Bouton_conteneur_span{
+   color: #ffffff;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.text_gras{
+   font-weight: bold;
+   font-size: 1em;
 }
