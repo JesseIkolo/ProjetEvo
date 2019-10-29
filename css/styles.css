@@ -200,6 +200,9 @@ header .onglet a:hover{
    border-top-right-radius: 5px;
    background-color: white;
 }
+header .onglet .for{
+   background: #fff;
+}
 
 section {
    width: 100%;
@@ -226,6 +229,16 @@ section .choose{
 section .choose p{
    font-size: 20px;
    text-align: center;
+}
+
+section .lienCompare{
+   text-decoration: none;
+   color: black;
+   padding: 6px 15px;
+   border: 2px solid rgb(7, 236, 7);
+   border-radius: 15px;
+   margin-left: 45%;
+   text-transform: uppercase;
 }
 
 .wrapper{
