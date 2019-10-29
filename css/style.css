@@ -475,7 +475,7 @@ margin-left: 320px;
 	display: table;
     width: 100%;
     min-height: 700px;
-	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../..) no-repeat center center;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..) no-repeat center center;
 	background-color: #000000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
