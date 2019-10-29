@@ -4,45 +4,123 @@
 
 html,body{
    padding: 0;
-   margin: 0;
-   width:100% ;
+   margin : 0;
+   width: 100%;
    height: 100%;
    font-size: 16px;
+   font-family: 'Century Gothic', sans-serif;
 }
 
-a,a:hower,a:visited{
+a,a:hover,a:visited{
    text-decoration: none;
-   color: inherit
+   color : inherit
 }
-
 .topBar{
-   border: 1px solid red;
-   width: 100%;
-   max-width: 1024;
-   margin: 0 auto;
+   /* border : 1px solid red; */
+   width : 100%;
+   max-width: 1024px;
    display: flex;
    justify-content: space-between;
-   padding: 2.25em 0 0;
+   padding: 2em 0 0 0;
+   position: relative;
+   background: rgb(240,249,255);
+   background: -moz-linear-gradient(top,  rgba(240,249,255,1) 96%, rgba(203,235,255,1) 100%, rgba(161,219,255,1) 100%, rgba(203,235,255,1) 100%);
+   background: -webkit-linear-gradient(top,  rgba(240,249,255,1) 96%,rgba(203,235,255,1) 100%,rgba(161,219,255,1) 100%,rgba(203,235,255,1) 100%);
+   background: linear-gradient(to bottom,  rgba(240,249,255,1) 96%,rgba(203,235,255,1) 100%,rgba(161,219,255,1) 100%,rgba(203,235,255,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#cbebff',GradientType=0 );
+
+   
 }
 .topBar .logo{
-   width: 30px;
-   height: 30px;
-   background-color: #02b6fb;
-
+   width: 90px;
+   height : 30px;
+   background-color: rgb(2, 181, 252);
+   
 }
 .topBar .navigation{
-   width: calc(100% - 90% - 100%);
-   display: ;
+   width: calc(100% - 90px - 100px);
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
 }
+
 .topBar .navigation .navLink{
    margin-right: 10px;
-   font-family: helvetical, Arial,Sans-sensif;
-   display: flex;
+   font-family: Helvetica,Arial, sans-serif;
+   display: flex
 }
-.topBar .navigation .signIn{
+.topBar .navigation .SignIn{
    position: absolute;
-   top: 0;
+   top : -10px;
    right: 0;
-   width:50px ;
-   display: block;
+   display : block;
+}
+
+.header{
+   width: 100%;
+   /* max-width: 1024px; */
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 60vh;
+   min-height: 400px;
+   background: rgb(240,249,255);
+background: -moz-linear-gradient(top,  rgba(240,249,255,1) 62%, rgba(203,235,255,1) 72%, rgba(161,219,255,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(240,249,255,1) 62%,rgba(203,235,255,1) 72%,rgba(161,219,255,1) 100%);
+background: linear-gradient(to bottom,  rgba(240,249,255,1) 62%,rgba(203,235,255,1) 72%,rgba(161,219,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 );
+
+   
+
+}
+
+h1{
+   margin: 0;
+}
+h4{
+   font-weight: normal;
+   margin-bottom: 1.5em;
+}
+
+.tabBar{
+   width: 100%;
+   max-width: 1024px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+}
+.tabBar .tabBarButtons{
+   width: 100%;
+   height : 2.5em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 60px;
+   padding: 15px;
+   margin-bottom: 0;
+   margin-top: -60px;
+   font-weight: 600;
+}
+.tabBar .tabBarButtons .tabLink{
+   padding: 15px;
+   font-weight: 600;
+
+}
+.tabBar .tabBarContents{
+   width : 100%;
+   height : 60vh;
+   min-height: 400px;
+}
+.bord{
+   width: 5%;
+   height: 3px;
+   position: absolute;
+   bottom: 0;
+   display: none;
+   background-color: lawngreen;
+}
+.navLink:hover .bord{
+   display: flex;
 }
