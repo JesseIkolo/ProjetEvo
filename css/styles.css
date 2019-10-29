@@ -89,7 +89,7 @@ header{
 
 
 header .status{
-   padding: 10px 5%;
+   padding: 10px 6%;
    display: inline-block;
    text-align: right;
    width: 80%;
@@ -99,7 +99,7 @@ header .status{
 header .status .statusImage img{
    width: 20px;
    height: 20px;
-   margin-left: -65px;
+   margin-left: -67px;
    position: absolute;
 }
 
@@ -144,6 +144,8 @@ header .menu .liens .liensUtils a{
 
 header .menu .liens .liensUtils a:hover{
    border-bottom: 2px solid rgb(7, 236, 7);
+   background: #fff;
+   border-radius: 10px;
 }
 
 header .menu .liens .liensUtils a.lienGetStartet{
@@ -156,6 +158,21 @@ header .menu .liens .liensUtils a.lienGetStartet{
 
 header .menu .liens .liensUtils a.lienGetStartet:hover{
    border: 2px solid;
+}
+header .menu .liens .liensUtils .pricing{
+   border-bottom: 2px solid rgb(7, 236, 7);
+}
+header .menu .liens .liensUtils img{
+   margin-bottom: -8px;
+}
+
+header .menu .liens .liensUtils .bord{
+   width: 80%;
+   height: 3px;
+   position: absolute;
+   bottom: 0;
+   display: none;
+   background: #fff;
 }
 
 header .getTech{
@@ -203,6 +220,9 @@ header .onglet a:hover{
 header .onglet .for{
    background: #fff;
 }
+header .onglet img{
+   margin-right: 20px;
+}
 
 section {
    width: 100%;
@@ -231,6 +251,14 @@ section .choose p{
    text-align: center;
 }
 
+section .compare{
+   margin-top: 20px;
+}
+
+section .lienCompare img{
+   margin-bottom: -5px;
+}
+
 section .lienCompare{
    text-decoration: none;
    color: black;
@@ -239,24 +267,30 @@ section .lienCompare{
    border-radius: 15px;
    margin-left: 45%;
    text-transform: uppercase;
+   font-weight: bold;
+}
+section .lienCompare:hover{
+   border-color: black;
 }
 
 .wrapper{
    width: 900px;
-   margin: 5% auto;
+   margin: 5px auto;
 }
 .single-price{
-   width: 33%;
+   width: 22%;
    background:  linear-gradient(white, rgba(236, 239, 241));
    float: left;
    margin-top: 2%;
    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
    text-align: center;
+   justify-content: center;
    transition: 0.9s;
+   margin-right: 10px;
 }
 .price{
-   width: 100px;
-   height: 100px;
+   width: 50px;
+   height: 50px;
    margin: 5% auto 0 auto;
    text-align: center;
 }
@@ -282,6 +316,7 @@ section .lienCompare{
    transform: scale(1.1);
    z-index: 1;
    border: 2px solid rgb(7, 236, 7);
+   border-radius: 10px;
 }
 .single-price:hover h1{
    color:rgb(7, 236, 7);
