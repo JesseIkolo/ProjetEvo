@@ -133,6 +133,7 @@ header .menu .liens .liensUtils{
    display: inline-block;
    width: 100%;
    text-align: right;
+   
 }
 
 header .menu .liens .liensUtils a{
@@ -288,4 +289,13 @@ section .choose p{
 .single-price:hover a{
    background: rgb(7, 236, 7);
    color: #fff;
+}
+
+bord{
+   width: 80%;
+   height: 3px;
+   position: absolute;
+   bottom: 0;
+   display: none;
+   background: olive;
 }
