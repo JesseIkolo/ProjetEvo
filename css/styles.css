@@ -216,6 +216,7 @@ span.boxSubTitle, span.boxFooter{
  }
 
  div.boxButton{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    border: 0 solid #57c2f4;
    border-radius: 6px 6px 6px 6px;
    background-color: #57c2f4;
@@ -310,7 +311,6 @@ span.boxSubTitle, span.boxFooter{
  }
 
  div.asideLink{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #77cdf6;
     font-size: 1.2em;
     font-weight: 400;
@@ -335,4 +335,142 @@ div.subTable{
    padding: auto;
    font-family: "Century Gothic";
    font-size: 1.2em;
+}
+
+.boxCompare{
+     display: flex;
+     justify-content: flex-end;
+     margin-right: 80px;
+}
+
+.boxCompare .box{
+   height: 350px;
+}
+
+.center_banner{
+   margin-top: 130px;
+   display: flex;
+   justify-content: center;
+}
+
+div.subTable.two{
+   margin-top: 90px;
+   font-size: 1.8em;
+   color: #333a3f;
+}
+
+.boxData{
+   display: flex;
+   justify-content: center;
+}
+
+.boxData .box{
+   height: 290px;
+}
+
+div.form{
+   position: relative;
+   margin-top: 180px;
+   background-image: url("../assets/headphones-1935971_1280.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #e6e6e6;
+   height: 980px;
+   /*filter: contrast(0.5);*/
+   background: linear-gradient(black, white) url("../assets/headphones-1935971_1280.png");
+}
+
+p.pform{
+   color: white;
+   font-family: "Century Gothic";
+   font-size: 3.5em;
+   font-weight: bold;
+   position: absolute;
+   left: 25%;
+   top: 80px;
+}
+
+p.pform2{
+   color: white;
+   font-family: "Century Gothic";
+   font-size: 1.5em;
+   font-weight: 400;
+   position: absolute;
+   left: 25%;
+   top: 200px;
+   text-align: center;
+}
+
+form{
+   position: absolute;
+   height: 700px;
+   width: 500px;
+   left: 38%;
+   bottom: -100px;
+   padding: auto;
+   border-radius: 10px 10px 10px 10px;
+   background-color: white;
+   box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2);
+   font-family: "Century Gothic";
+}
+
+
+form{
+   font-size: 1.2em;
+}
+
+label{
+   margin-top: 50px;
+   margin-left: 10%;
+   color : #631790;
+   font-family: "Century Gothic";
+   font-weight: bold;
+}
+
+input{
+     margin-top: 50px;
+     margin-left: 50px;
+     border: none;
+     border: 2px solid #631790;
+     padding: 10px;
+     border-radius: 5px 5px 5px 5px;
+     width: 200px;
+}
+
+form .boxButton{
+   position: absolute;
+   text-align: center;
+   padding: 20px;
+   bottom: 50px;
+   left: 180px;
+   font-size: 1.2em;
+}
+
+label[for = "radio"]{
+   margin-top: 200px;
+}
+
+input.radio{
+   margin-top: 50px;
+   height: 20px;
+   width: 20px;
+}
+
+div.footer{
+   margin-top: 180px;
+   font-family: "Century Gothic";
+   font-size: 1.5em;
+   font-weight: bold;
+   float: right;
+}
+
+div.footer span{
+   margin: 1px 10px 10px;
+   right: 20px;
+}
+
+div.footer .copy{
+   position: absolute;
+   font-family: "Dosis";
+   right: 240px;
 }
