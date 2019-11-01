@@ -285,11 +285,6 @@ margin-left: 320px;
     border-radius: 5px;
     padding-top: 40px;
 }
-.contenu2 .contient .card1 .statut{
-
-}
-
-
 
 
 
@@ -315,7 +310,6 @@ margin-left: 320px;
     height: 300px;
     display: inline-block;
     text-align: justify;
-    float: left;
    /* margin-left: 55px;*/
 }
 .titr1 .block1 .img1{
@@ -356,7 +350,6 @@ margin-left: 320px;
     height: 300px;
     display: inline-block;
     text-align: center;
-    float: right;
 }
 .titr1 .block2 .img2{
     width: 70px;
@@ -475,7 +468,7 @@ margin-left: 320px;
 	display: table;
     width: 100%;
     min-height: 700px;
-	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/11.jpg) no-repeat center center;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..) no-repeat center center;
 	background-color: #000000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
