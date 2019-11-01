@@ -16,7 +16,7 @@ a,a:hover, a:visited{
    color: inherit;
 }
 .contenu1{
-   height: 600px;
+   height: auto;
    background: rgb(219, 219, 217);
 }
 .topBar{
@@ -47,6 +47,7 @@ a,a:hover, a:visited{
   display: inline-block;
   justify-content: center;
   height: 36px;
+  
 }
 
 .topBar .navigation .navLink .bord{
@@ -55,11 +56,13 @@ a,a:hover, a:visited{
    height: 3px;
    position: absolute;
    bottom: 0;
-   background: #3edf82 ;
-   margin-left: 8px;
 }
 .topBar .navigation .navLink:hover .bord{
    display: flex;
+   border: 5px;
+   border-radius: 50%;
+   background: #3edf82 ;
+   margin-left: 8px;
 }
 
 
@@ -199,7 +202,8 @@ margin-left: 320px;
    padding-top: 50px;
    color: #c9d2da;
 }
-.contenu2 .contient .card .ess{
+.contenu2 .contient .card .ess .zoom{
+   
    display: flex;
    text-align: center;
    font-size: 30px;
@@ -482,3 +486,61 @@ margin-left: 320px;
   background-size: cover;
   -o-background-size: cover;
 }
+
+
+.colorgraph {
+   height: 5px;
+   border-top: 0;
+   background: #c4e17f;
+   border-radius: 5px;
+   background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+   background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+   background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+   background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+ }
+ 
+ .container {
+     background: #f0ad4e;
+ }
+
+
+
+
+ .white{
+   color:#000;
+   background-color:#fff;
+}
+
+.btn-facebook {
+   color: #ffffff;
+   -webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+   background-color: #2b4b90;
+   *background-color: #133783;
+   background-image: -moz-linear-gradient(top, #3b5998, #133783);
+   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#133783));
+   background-image: -webkit-linear-gradient(top, #3b5998, #133783);
+   background-image: -o-linear-gradient(top, #3b5998, #133783);
+   background-image: linear-gradient(to bottom, #3b5998, #133783);
+   background-repeat: repeat-x;
+   border-color: #133783 #133783 #091b40;
+   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b5998', endColorstr='#ff133783', GradientType=0);
+   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+   .btn-facebook:hover,
+   .btn-facebook:focus,
+   .btn-facebook:active,
+   .btn-facebook.active,
+   .btn-facebook.disabled,
+   .btn-facebook[disabled] {
+       color: #ffffff;
+       background-color: #133783 !important;
+       *background-color: #102e6d !important;
+   }
+
+   .btn-facebook:active,
+   .btn-facebook.active {
+       background-color: #0d2456 \9 !important;
+   }
