@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="./css/styles.css">
+   
    <title>Projet Evo</title>
 </head>
 <body>
@@ -185,6 +186,29 @@
       </div>
    </section>
 
+   <Center>
+      <div class="pop">
+         <div class="pop-content">
+
+            <div class="close">+</div>
+            <img src="./ressources/img/logo.jpg" alt="pop logo" width="170px" height="125px">
+
+            <div class="contrat">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam</p>
+               <a href="#">
+                  <button>Je Refuse</button>
+                  <button>J'accepte</button>
+               </a>
+         </div>
+
+         </div>
+      </div>
+   </Center>
+
    <footer>
          <div>
             
@@ -192,4 +216,8 @@
    </footer>
    
 </body>
+<script>document.querySelector('.close').addEventListener('click', function(){
+      document.querySelector('.pop').style.display = 'none';
+  })
+</script>
 </html>

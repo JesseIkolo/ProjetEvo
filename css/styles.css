@@ -446,3 +446,51 @@ section .lienCompare:hover{
    margin-bottom: -15%;
    color: #495057;
 }
+
+.pop{
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   position: absolute;
+   top: 0;
+   display: block;
+   justify-content: center;
+   align-items: center;
+}
+
+.pop-content{
+   width: 500px;
+   height: 300px;
+   background-color: white;
+   border-radius: 15px;
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   margin-top: 15%;
+}
+
+.contrat{
+   display: block;
+   margin: 15px auto;
+}
+
+.contrat button{
+   margin-top: 20px;
+   color: red;
+   margin-left: 20px;
+   border-color: rgb(7, 236, 7);
+   width: 25%;
+   height: 30px;
+   border-radius: 50%;
+   background-color: rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+}
+
+.close{
+   position: absolute;
+   top: 0;
+   right: 14px;
+   font-size: 42px;
+   transform: rotate(45deg);
+   cursor: pointer;
+}
