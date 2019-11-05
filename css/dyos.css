@@ -1,0 +1,88 @@
+*, *::after, *::before{
+   box-sizing: border-box;
+}
+
+body{
+   padding: 0;
+   margin: 0;
+}
+
+ul{
+   list-style: none;
+   margin-top: 0;
+}
+
+a{
+   text-decoration: none;
+}
+
+nav{
+   display: flex;
+   flex-flow: row nowrap;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   padding: .5rem 1rem;
+
+   margin-bottom: 100px;
+   height: 50px;
+   background-color: aqua;
+   width: 100%;
+}
+
+nav button{
+   display: none;
+}
+
+nav .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.navbar-nav{
+   flex-direction: row;
+   padding-left: 0;
+   margin-bottom: 0;
+   list-style: none;
+}
+
+
+nav ul{
+   display: flex;
+}
+
+#navbar{
+   justify-content: space-between !important;
+   display: flex !important;
+   align-content: flex-end;
+   flex-basis: auto;
+   flex-grow: 1;
+   align-items: center;
+
+}
+
+#navbar .nav-link{
+   padding: .5rem;
+   display: block;
+}
+
+.mr-auto{
+   margin-right: auto !important;
+}
+
+.ml-auto{
+   margin-left: auto !important;
+}
+
+.logo{
+   display: inline-block;
+   padding-top: .32rem;
+   padding-bottom: .32rem;
+   margin-right: 1rem;
+   font-size: 1.125rem;
+   line-height: inherit;
+   white-space: nowrap;
+}
+
