@@ -499,3 +499,72 @@
         background-size: cover;
         -o-background-size: cover;
     }
+    .tabContents .tabContent.actived .fom{
+       background-color: white;
+       width: 100%;
+       border-left: 2px solid;
+    }
+    .tabContents .tabContent.actived .fom .name{
+margin-left:10%;
+border: 1px solid ;
+border-left: 0px;
+border-right: 0px;
+  -webkit-appearance: none;
+  font-family : inherit;
+  font-size   : 100%;
+  /* background   : white; */
+  border-radius: 0px;
+  outline      : none; 
+
+    }
+    .tabContents .tabContent.actived .fom .NickName{
+        
+        margin-left:6%;
+        margin-top: 3%;
+        border: 1px solid ;
+  border-radius: 0;
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+font-family : inherit;
+font-size   : 100%;
+background   : white;
+border-radius: 0px;
+outline      : none;
+            }
+            .tabContents .tabContent.actived .fom .BirthDate{
+                
+                margin-left:0%;
+                margin-top: 3%;
+                width: 33%;
+                margin-bottom: 3%;
+                background   : white;
+  border-radius: 5px;
+  outline      : none;
+                    }
+                    .tabContents .tabContent.actived .fom .field{
+                        margin-top: 3%;
+                       margin-bottom: 3%;
+                       border:0px solid #DF3F3F;
+                       background   : white;
+  
+                            }
+                    .tabContents .tabContent.actived .fom .Homme{
+                       
+                        margin-left:1%;
+                        margin-top: 3%;
+                            }
+                            .tabContents .tabContent.actived .fom .Femme{
+                                
+                                margin-left:1.8%;
+                                margin-top: 3%;
+                                
+                            
+                                    }
+                                    .tabContents .tabContent.actived .fom .Autre{
+                                        
+                                        margin-left:5%;
+                                        margin-top: 3.5%;
+                                        
+                                    
+                                            }
