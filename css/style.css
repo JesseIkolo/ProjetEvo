@@ -151,7 +151,47 @@
         opacity: 1;
         transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
+    .tabBar .tabContents .tabContent .declencheurs,
+    .tabBar .tabContents .tabContent .rnds{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .tabBar .tabContents .tabContent .rnds:hover{
+        border: 1px solid ;
+        border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+    }
+    .tabBar .tabContents .tabContent .rnds:hover div{
+        animation: toUp 500ms ;
+    }
+    .tabBar .tabContents .tabContent .declencheurs{
+        align-content: center;
+        justify-content: center
+
+    }
+
+    .tabBar .tabContents .tabContent .declencheurs button{
+
+    }
+
+    .tabBar .tabContents .tabContent .rnds{
+        align-content: flex-start;
+        justify-content: space-between;
+        padding: 2em
+
+    }
+
+    .tabBar .tabContents .tabContent .rnds div{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
     
+    }
+
     .tabBar .tabContents .tabContent h1{
         font-size : 4em;
         color : rgba(0,0,0,0.7);
@@ -507,6 +547,8 @@
     .tabContents .tabContent.actived .fom .name{
 margin-left:10%;
 border: 1px solid ;
+  border-radius: 0;
+border-top: 0px;
 border-left: 0px;
 border-right: 0px;
   -webkit-appearance: none;
@@ -568,3 +610,14 @@ outline      : none;
                                         
                                     
                                             }
+    @keyframes toUp {
+        0%{ 
+            transform:translate(0,500px);
+
+         }
+
+        100%{ 
+            transform:translate(0,0);
+         }
+    }
+    

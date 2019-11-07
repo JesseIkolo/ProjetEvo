@@ -1,11 +1,5 @@
 $(document).ready(function(){
-   $('.tabLinks').click(function(){
-      $('.linkActived').removeClass('linkActived');
-      $(this).addClass('linkActived');
-      var id = $(this).data('content');
-      $('.tabContent.actived').removeClass('actived');
-      $('#'+ id).addClass('actived');
-   })
+  
 
    /**
     *  Deuxieme methode pour la manipulation des tabContents
@@ -47,4 +41,43 @@ $(document).ready(function(){
    //    console.log('Evenement avec Javascript pure')
    // })
 
+ // $(document).ready(function(){
+//    $('.tabLinks').click(function(){
+//       $('.linkActived').removeClass('linkActived');
+//       $(this).addClass('linkActived');
+//       var id = $(this).data('content');
+//       $('.tabContent.actived').removeClass('actived');
+//       $('#'+ id).addClass('actived');
+//    })
+
+
+   $('#btn1').click(function(){
+      console.log("ok")
+      $('.rnd1').css({
+         
+                     'animation': 'toUp 500ms'
+                  });
+   })
+   $('#btn2').click(function(){
+      $('.rnd2').css({
+                     'animation': 'toUp 500ms'
+                  });
+   })
+
+   $('#btn3').click(function(){
+      console.log('1122');
+      
+      $('.rnd3').animate({
+         'height' : "500px"
+      },500)   
+   })
+   $('.tabLinks').click(function(){
+      $('.linkActived').removeClass('linkActived');
+      $(this).addClass('linkActived');
+      var id = $(this).data('content');
+      $('.tabContent.actived').removeClass('actived');
+      $('#'+ id).addClass('actived');
+   })
 })
+
+ 
