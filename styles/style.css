@@ -1,0 +1,329 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:rgb(117, 64, 238);
+    );
+    /* background-color: rgb(117, 64, 238); */
+    color: aliceblue;
+    overflow: hidden;
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times
+}
+
+        /* pour utiliser le jusytify content il faut que ta classe soit en display flex
+            c est la raison pour l'aquelle je met text alin = center */
+
+.phone{
+    text-align: center;
+}
+
+.space_white{
+    display: flex;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(252, 243, 243);
+    border-radius: 50%;
+    bottom: 100px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.maps{
+    position: relative;
+    width: 55%;
+    height: 55%;
+}
+
+.hearder{
+    height: 120px;
+}
+
+.recherche{
+    margin: 0 auto;  /* permet de centrer notre recherche.   
+    pour centrer la  verticalement on uilise margin: 0 auto;  
+    et horizontalement on utilise magin: auto 0; centrer les daux on utilise margin auto; */
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(111, 63, 220);
+    width: 90%;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 28px;
+    height: 30px;
+}
+ 
+.image_recherche{
+    position: absolute;
+    left: 35%;
+    margin-top: 9px;
+}
+
+.recherche:hover .image_recherche{
+    position: relative;
+    left: -5%;
+    margin-top: 9px;   
+}
+
+.texbox{
+    background-color: rgb(111, 63, 220);
+    border: none;
+    width: 80%;
+    color: rgb(151, 111, 241);
+    text-align: center;
+}
+
+.after_seach{
+    position: relative;
+    display: flex;
+    height: 52%;
+}
+
+.evenement{
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 20px;
+    font-size: 20px;
+    height: auto;
+}
+
+.bordur_evenement{
+    margin-top: 7px;
+    background-color: rgb(159, 201, 235);;
+    height: 2px;
+    width: 45%;
+    display: none;
+}
+
+.evenement:hover .bordur_evenement{
+    display: block;
+}
+
+.navigation{
+    justify-content: center;
+    display: flex;
+    margin-bottom : 20px; 
+}
+
+.nalinks{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    background-color:  rgb(111, 63, 220);
+    margin-right: 4%;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.nalinks:hover{
+    background-color: rgb(159, 201, 235);
+}
+
+
+.all{
+    border-radius: 10px;
+    background-color: rgb(159, 201, 235);
+    width: 8%;
+    height: 18px;
+    /* margin-left: 5%; */
+}
+
+
+.image{
+    position: relative;
+    width: auto;
+    height: 80%;
+    
+}
+
+.picture_navig{
+    position: relative;
+    width: 20PX;
+    height: 20px;
+    left: -4px;
+}
+                  
+    /* meme si on enleve ca ne derange pas ce sont les proprieté par defaut */
+.encardre_element{
+    width: auto;
+    height: auto;
+}
+
+.popular_event{
+    position: relative;
+    text-align: left;
+    left: 25px;
+    margin-bottom: 8px;
+
+}
+
+                /* a retoucher plus tart */
+
+.elements{
+    width: calc((265px)*10);
+    display: flex;
+    overflow-x: auto;
+    margin-left: 10px;
+    animation: glisse 10s infinite;  
+}
+
+.element{
+    border-radius: 15px;
+    height: 150px;
+    width: 250px;
+    background-color: rgb(255, 220, 124);
+    margin-left: 15px;
+    top: 200px;
+}
+
+.contenu_elemnt{
+    position: relative;
+    top: 35%;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.date_and_texte{
+    display: block;
+    text-align: left;
+    position: relative;
+    top: 70px;
+    left: 5px;
+    color: black;
+}
+
+.footer{
+    height: 100%;
+}
+
+.nearby_showall{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.nearby{
+    position: relative;
+    margin-left:20px;
+}
+.showall{
+    position: relative;
+    margin-right:23px;
+    color: rgb(103, 88, 138);
+}
+
+.big_Bottom{
+    display: flex;
+    overflow: scroll;
+    margin-left: 15px ;
+    height: 100%;
+    width: calc((108px)*8);
+}
+
+.Bottom{
+    display: flex;
+    background-color:  red;
+    height: 42px;
+    width: 100px;
+    margin: 8px;
+    margin-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.image{
+    position: relative;
+    top:20%;
+    left:10%;
+    width: 45%;
+    height: 80%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.element_bottom_footer{
+    display: flex;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    padding: 15px 16px 20px 15px;
+}
+
+.buttun_bottom{
+    margin: 0;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+}
+
+        /* personalize la taille de l image */
+.IMG{
+    width: 30px;
+    height: 30px;
+}
+
+.btn{
+    position: fixed;
+    z-index: 100000;
+    top: 290px;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(
+        to top left,
+        rgb(255, 220, 124),
+        blue
+    );
+}
+.btn_avance{
+    right: 0;
+}
+
+.btn_rentre{
+    left: 0;
+    margin: 0;
+}
+
+.back{
+    width: 30px;
+    height: 30px;
+}
+
+.avance{
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-265px);
+    }
+    40%{
+        transform: translateX(-530px);
+    }
+    60%{
+        transform: translateX(-795px);
+    }
+    80%{
+        transform: translateX(-1060px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.btn_avance:hover .element{
+    animation: glisse 5s infinite;
+}
+/* .btn_avance{
+   background-color: rgb(189, 237, 224);
+} */

@@ -1,282 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vrai hamman</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="contenu1">
-        <div class="topBar">
-            <div class="logo">  KIZEN</div>
-            <div class="navigation">
-                
-                <a href="#" class="navLink">Why kizen <div class="bord"></div></a>
-                <a href="#" class="navLink">Solutions<div class="bord"></div></a>
-                <a href="#" class="navLink">Fearures<div class="bord"></div></a>
-                <a href="#" class="navLink">Pricing<div class="bord"></div></a>
-                <a href="#" class="navLink">Company<div class="bord"></div></a>
-                <a href="#" class="navLink getStart">Get Started<div class="bord"></div></a>
-                <a href="#" class="signIn"><i class="fa fa-user "></i>sign In</a>
+    <div class="phone">
+
+        <div class="space" id="location" draggable="true">
+            <!-- boule maps flottante -->
+            <div class="space_white">
+                <img src="ressources/maps.png" alt="" class="maps">
             </div>
         </div>
-        <div class="header">
-            <h4>Get The <table>Technology Your Team Need</table></h4>
-            <h1>Grow Faster whit kizen.</h1>
-        </div>
-    </div>
-    <div class="tabBar">
-        <div class="tabBarButtons">
-            <a class="tabLinks linkActived" data-content="1">Connexion</a>
-            <a class="tabLinks" data-content="2">Inscription</a>
-            <a class="tabLinks" data-content="3">FAQ</a>
-            <a class="tabLinks" data-content="4">Entreprise</a>
-        </div>
-        <div class="tabContents">
-            <div class="tabContent" id="1">
-                <div class="message">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem et eum alias, ut quam laudantium temporibus, consequatur beatae molestias, nisi tempora quo.
+
+  
+        <!-- header contenant la barre de recherche, les differants textes evenement et leurs bordures -->
+        <div class="hearder">
+                <div class="recherche">
+                    <div class="image_recherche"> 
+                        <img src="ressources/search.png" alt="recherche" title="recherche">
+                    </div>
+                    <input type="text" placeholder="search" class="texbox">
                 </div>
-                <div class="fom">
-                    <form action="" method="post">
-                            <label for="Name">Votre Nom</label>
-                           <input type="text" name="Name" class="name" >
-                            <br>    
-                            <label for="NickName">Votre Prenom</label>
-                            <input type="text" name="NickName" class="NickName">
-                           </br>
-                           <br>
-                            <label for="BirthDate">Date de naissance</label>
-                            <input type="date" name="BirthDate" class="BirthDate">
-                        </br>
-                            <label for="Genre" class="genre">Votre Genre</label>
-                            <fieldset class="field">
-                                <br>
-                                <label for="Homme">Homme</label>
-                                <input type="radio" name="Homme" class="Homme">
-                            </br>
-                                <label for="Femme">Femme</label>                                
-                                <input type="radio" name="Femme" class="Femme">
-                                <br>
-                                <label for="Autre">Autre</label>
-                                <input type="radio" name="Autre" class="Autre">
-                        </br>
-                            </fieldset>
-                            <input type="submit" value="Connexion">
-                    </form>
+            <div class="after_seach">
+                <div class="evenement">Events <div class="bordur_evenement"></div> </div>
+                <div class="evenement">Categorie <div class="bordur_evenement"></div></div>
+            </div>
+        </div>      <!-- fin du header -->
+
+                     <!-- debut du corps -->
+         <div class="corps">
+             <div class="navigation">
+                 <div class="nalinks all">all</div>
+                 <div class="nalinks"><div class="picture_navig"><img src="ressources/muscle1.png" alt="" class="image1"></div>  sport</div>
+                 <div class="nalinks"><div class="picture_navig"><img src="ressources/birthday.png" alt="" class="image1"></div> birthday</div>
+             </div>
+
+             <div class="encardre_element">
+                 <div class="popular_event"> Popular events</div>
+           <!--<div class="element_btn">
+                <div class="btn btn_rentre"><img src="back.png" alt="" class="back"></div>
+                <div class="btn btn_avance"><img src="avance.png" alt="" class="avance"></div>-->
+                 <div class="elements">
+                      <div class="element">
+                          <div class="contenu_elemnt"> Taylor Swift </div> 
+                          <div class="date_and_texte"> 
+                              <div class="date"> wen, 21 Aug</div>
+                              <div class="texte">club devil sth avenue 287</div>
+                          </div>
+                     </div>
+                        <div class="element active">
+                            <div class="contenu_elemnt"> Miley Cirus </div> 
+                            <div class="date_and_texte"> 
+                                <div class="date"> wen, 21 Aug</div>
+                                <div class="texte">club devil sth avenue 287</div>
+                            </div>
+                       </div>
+                       <div class="element">
+                            <div class="contenu_elemnt"> Ronaldo </div> 
+                            <div class="date_and_texte"> 
+                                <div class="date"> wen, 21 Aug</div>
+                                <div class="texte">club devil sth avenue 287</div>
+                            </div>
+                       </div>
+                       <div class="element">
+                            <div class="contenu_elemnt"> Leonel Messi </div> 
+                            <div class="date_and_texte"> 
+                                <div class="date"> wen, 21 Aug</div>
+                                <div class="texte">club devil sth avenue 287</div>
+                            </div>
+                       </div>
+                       <div class="element">
+                            <div class="contenu_elemnt"> Eken Franky </div> 
+                            <div class="date_and_texte"> 
+                                <div class="date"> wen, 21 Aug</div>
+                                <div class="texte">club devil sth avenue 287</div>
+                            </div>
+                       </div> 
+                    </div>
+                </div>
+             </div>
+         </div>
+         
+              <!-- fin du corps -->
+
+              <!-- debut du footer -->
+         <div class="footer">
+             <div class="nearby_showall">
+                <div class="nearby">nearby content</div>
+                <div class="showall">Show All</div>
+            </div>
+
+            <div class="big_Bottom">
+                <div class="Bottom">
+                    <img src="" alt="" class="image1">
+                </div>
+                <div class="Bottom">
+                        <img src="" alt="" class="image1">
+                </div>
+                <div class="Bottom">
+                    <img src="" alt="" class="image1">
+                </div>
+                <div class="Bottom">
+                        <img src="" alt="" class="image1">
+                </div>
+                <div class="Bottom">
+                        <img src="" alt="" class="image1">
+                </div>
+                <div class="Bottom">
+                        <img src="" alt="" class="image1">
+                </div>
+                <div class="Bottom">
+                        <img src="" alt="" class="image1">
+                </div>
+                <div class="Bottom">
+                        <img src="" alt="" class="image1">
                 </div>
             </div>
-            <div class="tabContent" id="2">
-                <h1>2</h1>
-            </div>
-            <div class="tabContent  actived" id="3">
-                <div class="declencheurs"> 
-                    <button id="btn1">
-                      declencher1
-                    </button>
+
+
+            <div class="element_bottom_footer">
+                <div class="buttun_bottom">
+                    <img src="ressources/cards.png" alt="" class="IMG" >
                 </div>
-                <div class="declencheurs"> 
-                    <button id="btn2">
-                      declencher2
-                    </button>
+                <div class="buttun_bottom ">
+                    <img src="ressources/search2.png" alt="" class="IMG">
                 </div>
-                <div class="declencheurs"> 
-                    <button id="btn3">
-                      declencher3
-                    </button>
+                <div class="buttun_bottom">
+                    <img src="ressources/plus.png" alt="" class="IMG">
                 </div>
-                <div class="rnds">
-                    <div class="rnd1" style="background:rgb(0, 255, 136)" ></div>
-                    <div class="rnd2" style="background:red"></div>
-                    <div class="rnd3" style="background:rgb(255, 251, 0)"></div>
-                    
+                <div class="buttun_bottom">
+                    <img src="ressources/sent.png" alt="" class="IMG">
                 </div>
-                
-            </div>
-            <div class="tabContent" id="4">
-                <h1>4</h1>
-            </div>
-        </div>
-    </div>
-    <div class="contenu2">
-        <div class="header">
-            <h2>Select your suite.</h2>
-            <p>Choose the features and functionality your teams need today. Easely <br> upgrade 
-               as your Company grows. </p>
-        </div><br><br>
-        <div class="btnPackage">
-            <span>Company packages</span>
-        </div> <br><br><br>
-        <div class="contient">
-            <div class="card">
-                <span class="ess">Essential</span>
-                <p class="startat">Starting at</p>
-                <p class="price">$50<span>/mo</span></p>
-                <p class="explain">The most important <br> functionality for your <br> 
-                    teams--perfectly integrated from <br> one vandor.</p>
-                <span class="btn">START</span>
-                <P> 2 Essentials sales or service</P>
-                <P> 2.000 actives contacts</P>
-                <span class="tx">512 per adsitional user</span>
-                <span class="tx">512 per adsitional 1.000 contacts</span>
-                <p class="view"><i class="fa fa-eye"></i> See Details</p>
-            </div>
-            <div class="card">
-                <span class="ess1">Professional</span>
-                <p class="startat">Starting at</p>
-                <p class="price">$145<span>/mo</span></p>
-                <p class="explain">The most important <br> functionality for your <br> 
-                    teams--perfectly integrated from <br> one vandor.</p>
-                <span class="btne">START</span>
-                <P> 2 Essentials sales or service</P>
-                <P> 2.000 actives contacts</P>
-                <span class="tx">512 per adsitional user</span>
-                <span class="tx">512 per adsitional 1.000 contacts</span>
-                <p class="view"><i class="fa fa-eye"></i> See Details</p>
-            </div>
-            <div class="card">
-                <span class="ess">Unlimited</span>
-                <p class="startat">Starting at</p>
-                <p class="price">$1,250<span>/mo</span></p>
-                <p class="explain">The most important <br> functionality for your <br> 
-                    teams--perfectly integrated from <br> one vandor.</p>
-                <span class="btn">START</span>
-                <P> 2 Essentials sales or service</P>
-                <P> 2.000 actives contacts</P>
-                <span class="tx">512 per adsitional user</span>
-                <span class="tx">512 per adsitional 1.000 contacts</span>
-                <p class="view"><i class="fa fa-eye"></i> See Details</p>
-            </div>
-            <div class="card">
-                <span class="ess4">Al</span>
-                <p class="startat">Starting at</p>
-                <p class="price">Custom</span></p>
-                <p class="explain">The most important <br> functionality for your <br> 
-                    teams--perfectly integrated from <br> one vandor.</p>
-                <span class="btn">START</span>
-                <P> 2 Essentials sales or service</P>
-                <P> 2.000 actives contacts</P>
-                <span class="tx">512 per adsitional user</span>
-                <span class="tx">512 per adsitional 1.000 contacts</span>
-                <p class="view"><i class="fa fa-eye"></i> See Details</p>
-            </div>
-            <!-- 
-            <div class="card1">
-                <span class="statut">Popular</span><br>
-                <span class="ess1">Professional</span>
-                <p class="startat">Starting at</p>
-                <p class="price">$50<span>/mo</span></p>
-                <p class="explain">Inhenced collaboration, <br> customizability, and automation <br> 
-                    for high performing teams.</p>
-                <span class="btn">START</span>
-                <P> 2 professional sales or service</P>
-                <P> 5.000 actives contacts</P>
-                <span class="tx">550 per adsitional user</span>
-                <span class="tx">515 per adsitional 1.000 contacts</span>
-            </div>
-            -->
-            
-        </div><br><br><br><br><br>
-        <div class="space"></div>
-        <br><br><br><br>
-        <div class="titr1">
-            <div class="block1">
-                
-                <p class="tet1">Kizen startup partnership</p> 
-                <h1 class="big1">Grow your startup</h1>
-                <p class="textee">You need the platform that can deploy quickly and has the features needed for 
-                    every stage of growth. Add up to 5 of your team number to the sales or services 
-                    entreprise suite and up to 10.OOO contacts to our Marketing entreprise suite for 
-                    only $49 per month, plus access discounts for the next 5 years.
-                </p>
-                <p class="app">Apply now </p>
-            </div> 
-            <div class="block2">
-                <p class="tet2">Kizen cares</p> 
-                <h1 class="big2">Our 10% pledge</h1>
-                <p class="textee">For every 9 for-profit seats, kizen reserve one seat for nonprofits
-                    and social entreprise users. We will also dedicate 10% of our support service to 
-                    maximize their impact.
-                </p>
-                <p class="app">Join the waitlist 
-                </p>
-            </div>   
-        </div>
-        <div class="space1"></div>
-        <div class="contenu3">
-            <h2>Compare.</h2>
-            <p>View a detail comparaison of our plan to thoose the offering that is best <br> for your 
-                teams members and the trajectory of your company. </p>
-        </div>
-        <div class="contenu4">
-            <div class="bl1 bl">
-                <span class="ess">Essential</span>
-                <p class="price">$25<span>/mo</span></p>
-                <p class="explain">The most important <br> functionality for your <br> 
-                    teams--perfectly integrated from <br> one vandor.</p>
-            </div>
-            <div class="bl2 bl">
-                <span class="ess1">Professional</span>
-                <p class="price">$65<span>/mo</span></p>
-                <p class="explain">Inhenced collaboration, <br> customizability, and automation <br> 
-                    for high performing teams.</p>
-            </div>
-            <div class="bl3 bl">
-                <span class="ess1">Entreprise</span>
-                <p class="price">$150<span>/mo</span></p>
-                <p class="explain">Inhenced collaboration, <br> customizability, and automation <br> 
-                    for high performing teams.</p>
-            </div>
-            <div class="bl4 bl">
-                <span class="ess1">Entreprise</span>
-                <p class="price">$150<span>/mo</span></p>
-                <p class="explain">Advanced, customizable all to <br> generate the highest-quality, <br>
-                    actionable insign and maximize <br> the efficiency of every members <br> of your teams.</p>
-            </div>
-        </div>
-        <div class="autreblock">
-        </div><br><br>
-        <div class="contenu3">
-                <h2>Import your data.</h2>
-                <p>View a detail comparaison of our plan to thoose the offering that is best <br> for your 
-                    teams members and the trajectory of your company. </p>
-        </div>
-        <div class="contenu4">
-            <div class="bl1 bl">
-                    <span class="essa">API or CSV</span>
-                    <p class="prix">$0</p>
-                    <p class="explain">Uploard contacts for a CSV file <br> or via the Kizen API.</p>
-                    <p class="my">Included whit your account</p>
-            </div>
-            <div class="bl2 bl">
-                    <span class="essa">Data import</span>
-                    <p class="prix">$0</p>
-                    <p class="explain">Import your data from over <br>40 CRMs directly into kizen</p>
-                    <p class="my1">Included whit your account</p>
-            </div>
-            <div class="bl3 bl">
-                    <span class="essa">Cleanup & migration</span>
-                    <p class="prix">$1,500</p>
-                    <p class="explain">The kizen team will import your <br>
-                            data directly into your account
-                </p>
-                <p class="my2">Included whit your account</p>
-                <br><br><br><br><br>
-            </div>
-        </div>
-        
-    </div><br><br><br><br><br>
-    <div class="contact">
-        <div class="titr">
-            <h2>What con kizen do for your business</h2>
-            <p>View a detail comparaison of our plan to thoose the offering that is best <br> for your 
-                teams members and the trajectory of your company. </p>
-        </div>  
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+                <div class="buttun_bottom">
+                    <img src="ressources/personne1.jpg" alt=""class="IMG">
+                </div>
+             </div>
+         </div>
+     </div>
+
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-ui.js"></script>
+     <script src="js/script.js"></script>
 </body>
 </html>
