@@ -2,45 +2,84 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Developpement Web 1</title>
-   <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mobile</title>
 </head>
 
 <body>
-   <header>
-      <a href="pages/page1.html">
-         Lien hypertext
-      </a>
-   </header>
-
-
-
-   <h1 style="color:red">Hello World !</h1>
-   <h2>
-      Bonjour ceci est ma première page web.
-   </h2>
-   <h3 class="titre3">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sit nostrum mollitia, voluptates quas
-      suscipit, est enim in natus iste esse laboriosam officiis!
-   </h3>
-   <h4>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolore!
-   </h4>
-   <h5>
-
-   </h5>
-   <h6>
-
-   </h6>
-   <p id="paragraphe">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat neque porro magni amet minima nihil alias natus,
-      dolorem, laudantium quas impedit placeat dolores repellat. Dicta quasi vero optio sit modi.
-   </p>
-
-
+    <div class="main" id="container">
+        <div class="boxsearch">
+            <img src="image/search_480px.png" alt="search" class="icon ch">
+            <input type="search" class="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="choice">
+            <div class="bar"></div>
+            <h1 class="active">Events</h1>
+            <h1>Categories</h1>
+        </div>
+        <div class="sticks">
+            <div class="stick">
+                <div class="all">All</div>
+                <div class="flag"><img src="image/biceps_480px.png" alt="" class="icon fl"> Sports</div>
+                <div class="flag"><img src="image/confetti_480px.png" alt="" class="icon fl"> Birthday</div>
+            </div>
+            <div class="stick">
+                <div class="flag"><img src="image/biceps_480px.png" alt="" class="icon fl"> Sports</div>
+                <div class="flag"><img src="image/confetti_480px.png" alt="" class="icon fl"> Birthday</div>
+            </div>
+        </div>
+        <div class="title">
+            <span class="light">Popular</span>
+            <span class="gras">Events</span>
+        </div>
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
+                <div class="card active">
+                    <div class="titlecard">Taylor Swift</div>
+                    <div class="textnot">                   
+                        <div class="date">Wen, 21Aug</div>
+                        <div class="location">Club Devil, 5th Avenu, 287</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="titlecard">Taylor Swift</div>
+                    <div class="textnot">
+                        <div class="date">Wen, 21Aug</div>
+                        <div class="location">Club Devil, 5th Avenu, 287</div>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+        </div>
+        <div class="title">
+            <span class="light">Nearby</span>
+            <span class="gras">Concerts</span>
+        </div>
+        <div class="picsub">
+            <div class="picbox"><img src="image/oladimeji-odunsi-tUUmR82pq68-unsplash.jpg" alt="" class="pic"></div>
+            <div class="picbox">
+                <img src="image/philipe-cavalcante-Ugpcxb0jG4Q-unsplash.jpg" alt="" class="pic">
+            </div>
+        </div>
+                  <div id="item">
+                  </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="bottomBar">
+        <img src="image/red_yellow_cards_480px.png" alt="" class="icon btm">
+        <img src="image/search_480px.png" alt="" class="icon btm">
+        <img src="image/add_512px.png" alt="" class="icon btm">
+        <img src="image/paper_plane_512px.png" alt="" class="icon btm">
+        <img src="image/zachary-staines-m61dSiiEAKQ-unsplash.jpg" alt="" class="icon btm round">
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

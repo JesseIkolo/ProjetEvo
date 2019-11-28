@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Light.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf") format("ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #7540ee;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    overflow: hidden;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.main {
+    margin: 8% 5% 6% 6%;
+}
+
+.boxsearch {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.search {
+    position: fixed;
+    color: #855de1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    width: 320px;
+    height: 40px;
+    text-align: center;
+    word-spacing: 10px;
+    padding-left: 20px;
+}
+
+.search::placeholder {
+    font-size: 14px;
+    color: #855de1;
+    font-weight: 700;
+}
+
+.icon.ch {
+    position: absolute;
+    left: 35%;
+    top: 8px;
+}
+
+.choice {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+    padding: 2px;
+    color: #9e79f3;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-family: "Montserrat";
+}
+
+.choice h1:last-child {
+    margin-left: 20px;
+}
+
+.choice .active {
+    color: white;
+}
+
+.bar {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 40px;
+    height: 4px;
+    left: 5px;
+    top: 45px;
+}
+
+.sticks {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    /*border: 3px solid yellow;*/
+}
+
+.stick {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+    color: white;
+    /*border: 3px solid red;*/
+    flex-shrink: 0;
+    margin-left: 80px;
+    width: 100%;
+}
+
+.sticks div:first-child {
+    margin-left: 0;
+}
+
+.stick div {
+    margin-right: 25px;
+}
+
+.stick div:last-child {
+    margin-right: 0;
+}
+
+.all {
+    background-color: #97dffc;
+    border-radius: 10px 10px 10px 10px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #3d3d3d;
+    padding: 15px;
+}
+
+.flag {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.icon.fl {
+    vertical-align: middle;
+}
+
+.title {
+    margin-top: 20px;
+    color: white;
+}
+
+.light {
+    font-family: "Poppins";
+}
+
+.gras {
+    font-weight: bolder;
+}
+
+.cards {
+    margin-top: 30px;
+    display: flex;
+}
+
+.card {
+    position: relative;
+    background-color: #bdede0;
+    border-radius: 10px 10px 10px 10px;
+    width: 270px;
+    height: 150px;
+    padding: auto;
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.card.active {
+    background-color: #e5c670;
+}
+
+.textnot {
+    position: absolute;
+    top: 68%;
+    left: 20px;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: "Roboto";
+}
+
+.titlecard {
+    font-family: "Montserrat";
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 22%;
+}
+
+.date {
+    color: #4eba5a;
+}
+
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #7540ee;
+    z-index: 4;
+}
+
+.icon.btm {
+    margin-right: 40px;
+    height: 34px;
+    width: 34px;
+}
+
+.icon.btm.round {
+    border-radius: 10px 10px 10px 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.picsub {
+    z-index: 1;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.picbox {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    width: 150px;
+    height: 100px;
+}
+
+.pic {
+    position: absolute;
+    border-radius: 10px 10px 10px 10px;
+    width: 60px;
+    height: 60px;
+    top: 25px;
+    left: 15%;
+}
+
+.pic.drag {
+    right: 0;
+    top: -50px;
+}
+
+
+/* drog and drop boutton */
+  #item {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 10px solid red;
+    border-radius: 50%;
+    touch-action: none;
+    user-select: none;
+  }
+  #item:active {
+    background-color: rgba(168, 218, 220, 1.00);
+  }
+  #item:hover {
+    cursor: pointer;
+    border-width: 20px;
+  }
+
+  /*slide card css*/
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -30px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -30px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+/* .active,
+.dot:hover {
+    background-color: white
+} */
