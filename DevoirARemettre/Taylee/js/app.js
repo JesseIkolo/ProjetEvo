@@ -10,11 +10,11 @@ $(document).ready(
         var EventsShow = document.getElementsByClassName('EventsShow');
         var SwipeEvents = new Hammer(EventsShow[0]);
 
-        touch.get('swipe').set({
+        SwipeEvents.get('swipe').set({
             direction: Hammer.DIRECTION_ALL
         });
 
-        touch.on('swiperight', function(){
+        SwipeEvents.on('swiperight', function(){
             $('.EventsShow').animate(
                 {
                     left: "+=300px"
@@ -23,7 +23,7 @@ $(document).ready(
             );
         });
         
-        touch.on('swipeleft', function(){
+        SwipeEvents.on('swipeleft', function(){
             $('.EventsShow').animate(
                 {
                     left: "-=300px"
