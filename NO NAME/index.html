@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <title>#NONAME | Faites votre marché en ligne gratuitement !</title>
+</head>
+<body>
+
+    <div class="header" id="head">
+        <div class="tabLinks" id="mainHeader">
+            <a href="#" class="tabLink noname">#</a>
+            <a href="pages/maVille/maville.html" class="tabLink">Ma ville</a>
+            <a href="index.html" class="tabLink">Fil d'actualité</a>
+            <a href="pages/tendances.html" class="tabLink">Tendances du mois</a>
+            <a href="pages/letop50.html" class="tabLink top50">LeTop50</a>
+            <a href="#" class="tabLink">Boutiques</a>
+            <a href="pages/categories.html" class="tabLink">Catégories</a>
+            <div class="search logo" id="search"></div>
+            <a href="pages/login.html" class="loginLink">
+                <div class="loginBox">
+                    <div class="loginPic logo"></div>
+                    <div class="loginName">Se connecter</div>
+                </div>        
+            </a>
+            <div class="search-form">
+                <form action="">
+                    <input type="search" name="search" id="topSearch" placeholder="Chercher un produit, une marque, une boutique...">
+                </form>
+            </div>    
+        </div>
+        <div class="headBanner box">
+            <div class="little-text">#TopOne</div>
+            @TheULTIMATE passe devant !
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolor laudantium magni provident mollitia maxime totam? Tempore temporibus sunt animi quos dolores, officiis odit delectus veniam officia consequuntur reprehenderit exercitationem!</p>
+        </div>
+    </div>
+
+    <!-- La barre d'outil est entre le header et la page elle-même (flow) -->
+    <div class="toolBar">
+        <div class="inputSearch">
+            <div class="searchLogo logo"></div>
+            <input type="search" name="search" id="mainsearch" placeholder="Rechercher un produit ou une boutique...">
+        </div>
+        <div class="sortSearch">
+            <p>Trier par : </p>
+            <select name="option-tri" id="options-tri">
+                <option value="1">Popularité</option>
+                <option value="2">Pertinence</option>
+                <option value="3">Prix croissant</option>
+                <option value="4">Prix décroissant</option>
+            </select>
+        </div>
+    </div>
+
+    <!--La page blanche -->
+    <div class="main">
+        <div class="adBanner"></div>
+
+        <div class="flow">
+
+            <!-- Les blocs sont séparés par des separators -->
+
+            <!-- Bloc de catégories -->
+            <div class="categoriesBox box">
+                <div class="categoryBox">
+                    <div class="categoryLogo logo chaussures_femmes"></div>
+                    <div class="categoryName">
+                        Chaussures femmes
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <div class="categoryLogo logo maillots_de_sport"></div>
+                    <div class="categoryName">
+                        Maillots de sport
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <div class="categoryLogo logo robes_pour_femme"></div>
+                    <div class="categoryName">
+                        Robes pour femme
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <div class="categoryLogo logo chaussures_hommes"></div>
+                    <div class="categoryName">
+                        Chaussures hommes
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <div class="categoryLogo logo ceintures"></div>
+                    <div class="categoryName">
+                        Ceintures
+                    </div>
+                </div>
+                <div class="categoryBox">
+                    <div class="categoryLogo logo accessoires_hommes"></div>
+                    <div class="categoryName">
+                        Accessoires hommes
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- Bloc de produits 1 -->
+            <div class="productsBox box">
+                <div class="productsBoxHeader">
+                    <div class="label box">
+                        Les plus populaires :
+                        <div class="categoryName text-important">Chaussures pour hommes</div>
+                    </div>
+                    <div class="controls box">
+                        <div class="expand box active">
+                            <div class="wide logo"></div>
+                        </div>
+                        <div class="expand box">
+                            <div class="lists logo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productBoxes box">
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="separator"></div>
+
+            <!-- Bloc de produits 2 -->
+            <div class="productsBox box">
+                <div class="productsBoxHeader">
+                    <div class="label box">
+                        Les plus populaires :
+                        <div class="categoryName text-important">Chaussures pour hommes</div>
+                    </div>
+                    <div class="controls box">
+                        <div class="expand box active">
+                            <div class="wide logo"></div>
+                        </div>
+                        <div class="expand box">
+                            <div class="lists logo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productBoxes box">
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- Bloc de produits 3 -->
+            <div class="productsBox box">
+                <div class="productsBoxHeader">
+                    <div class="label box">
+                        Les plus populaires :
+                        <div class="categoryName text-important">Chaussures pour hommes</div>
+                    </div>
+                    <div class="controls box">
+                        <div class="expand box active">
+                            <div class="wide logo"></div>
+                        </div>
+                        <div class="expand box">
+                            <div class="lists logo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productBoxes box">
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <!-- Bloc de produits 4 -->
+            <div class="productsBox box">
+                <div class="productsBoxHeader">
+                    <div class="label box">
+                        Les plus populaires :
+                        <div class="categoryName text-important">Chaussures pour hommes</div>
+                    </div>
+                    <div class="controls box">
+                        <div class="expand box active">
+                            <div class="wide logo"></div>
+                        </div>
+                        <div class="expand box">
+                            <div class="lists logo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productBoxes box">
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                    <div class="productBox">
+                        <div class="productBoxHeader">
+                            <div class="head box">
+                                <div class="shopName text-important">GHOSTRUNNER</div>
+                                <div class="likes box">
+                                    <p id="nbLikes text-important">1.5k</p>
+                                    <div class="like logo"></div>
+                                </div>
+                            </div>
+                            <div class="photo"></div>
+                        </div>
+                        <div class="productBoxFooter">
+                            <div class="productValues box">
+                                <div class="modelValue">Suede Chuk</div>
+                                <div class="priceValue">12 000 XAF</div>
+                            </div>
+                            <div class="brandLogo logo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mark">
+    
+            </div>
+        </div>
+        <div class="adBanner"></div>
+    </div>
+
+    <div class="footer">
+        <div class="logoBox box">
+            <div class="mainLogo box">#NO NAME</div>
+            <div class="marquesDispo box">
+                <div class="marques box">
+                    <div class="joinComBoxmarque HM logo"></div>
+                    <div class="joinComBoxmarque Levis logo"></div>
+                    <div class="joinComBoxmarque Supreme logo"></div>
+                </div>
+                <p>et <span class="text-important">+16 000</span> autres marques</p>
+            </div>
+        </div>
+        <div class="contactBox box">
+            <div class="title box">NOS INFORMATIONS</div>
+            <div class="contacts box">
+                <div class="contact box">
+                    <div class="facebook logo"></div>
+                    <div class="contactValue text-important">/nonamecompany</div>
+                </div>
+                <div class="contact box">
+                    <div class="instagram logo"></div>
+                    <div class="contactValue text-important">@TheNoNameCompany</div>
+                </div>
+                <div class="contact box">
+                    <div class="whatsapp logo"></div>
+                    <div class="contactValue text-important">(+237) 6 56 89 53 48</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

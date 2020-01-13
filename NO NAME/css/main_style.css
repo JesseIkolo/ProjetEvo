@@ -1,0 +1,444 @@
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: 1s;
+}
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Samsung Sans Light';
+    background-color: #181818;
+    background-color: #131313;
+    font-size: 13px;
+    scroll-behavior: smooth;       
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/*  Standards    */
+
+.logo{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    /* border: 1px solid rgb(106, 199, 12); */
+    cursor: pointer;
+}
+.flexbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-important{
+    font-weight: bold;
+}
+.little-text{
+    font-size: 50%;
+}
+.text-link{
+    color: #FA5A66;
+}
+.column{
+    flex-direction: column;
+}
+.box{
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(192, 192, 192);
+    margin: 20px 0px;
+}
+
+/*  Fin standards   */
+
+
+.header{
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.36);
+}
+    .tabLinks{
+        background-image: linear-gradient(to bottom,black, rgba(0, 0, 0, 0));
+        height: 60px;
+    }
+    .tabLinks a{
+        color: white;
+        border-top: 0px solid white;
+        border-bottom: 0px solid white;
+    }
+        .tabLinks a:hover{
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+
+    .tabLinks .loginLink:hover{
+        border-top: 0px solid white;
+        border-bottom: 0px solid white;
+    }
+    .tabLinks .loginBox{
+        color: white;
+    }
+        .loginBox:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+    .header .mainbanner{
+        display: flex;
+        flex-flow: row wrap;
+        flex-grow: 2;
+    }
+    .header .headBanner{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Samsung Sans Medium';
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        align-items: center;
+        color: white;
+        font-size: 50px;
+    }
+        .headBanner .little-text{
+            margin-bottom: 15px;
+        }
+        .headBanner p{
+            margin: 0px;
+            margin-top: 10px;
+            font-family: 'Samsung Sans Light';
+            font-size: 15px;
+            text-align: center;
+            width: 50%;
+        }
+
+.toolBar{
+    display: flex;
+    height: max-content;
+    justify-content: space-evenly;
+    font-family: 'Samsung Sans Light';
+    color: #bbb;
+    font-size: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+    .toolBar .inputSearch{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 35%;
+    }
+        .inputSearch #mainsearch{
+            outline: none;
+            border-radius: 25px;
+            width: 100%;
+            border: 0px solid;
+            font-size: 18px;
+            font-family: 'Samsung Sans Light';
+            padding: 15px 30px 15px 50px;
+            color: #cacaca;
+            background-color: rgb(43, 43, 43);
+        }
+            #mainsearch::placeholder{
+                color: #686868;
+            }
+            #mainsearch:focus{
+                background-color: white;
+                color: black;
+            }
+
+        .inputSearch .searchLogo{
+            display: flex;
+            position: absolute;
+            margin-left: 12px;
+        }
+
+    .toolBar .sortSearch{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 350px;
+        justify-content: space-around;
+    }
+        .sortSearch #options-tri{
+            background-color: #3E3E3E;
+            outline: none;
+            font-family: 'Samsung Sans Light';
+            color: white;
+            flex-grow: 2;
+            margin-left: 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: none;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;
+    height: max-content;
+}
+    .main .adBanner{
+        width: 100px;
+        height: 100%;
+        background-color: lawngreen;
+    }
+    .main .flow{
+        background-color: white;
+        width: 80%;
+        border-radius: 40px;
+        padding: 25px;
+    }
+        .flow .categoriesBox{
+            display: flex;
+            justify-content: space-evenly;
+            height: 150px;
+        }
+            .categoriesBox .categoryBox{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                width: 100px;
+                height: 100%;
+            }
+                .categoryBox .categoryLogo{
+                    border: none;
+                    height: 80px;
+                    width: 100%;
+                }
+                .categoryBox .categoryName{
+                    font-family: 'Samsung Sans Medium';
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-grow: 2;
+                    font-size: 15px;
+                    width: 100%;
+                }
+
+        .flow .productsBox{
+            display: flex;
+            padding: 0px;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+            .productsBox .productsBoxHeader{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+                .productsBoxHeader .label{
+                    font-size: 17px;
+                }
+                .productsBox .controls{
+                    width: 105px;
+                    justify-content: space-between;
+                }
+                    .controls .expand{
+                        transition: 0.2s;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
+                        .expand.active{
+                            background-color: rgba(0, 0, 0, 0.1);
+                        }
+                        .expand:hover{
+                            background-color: rgba(0, 0, 0, 0.08);
+                            transition: 0.3s;
+                        }
+
+            .productsBox .productBoxes{
+                display: flex;
+                padding: 15px;
+                flex-wrap: nowrap;
+                overflow-x: auto;            
+            }
+            .productBoxes::-webkit-scrollbar {
+                width: 5px;
+                height: 5px;
+                transition: 0.3s;
+            }                   
+            .productBoxes::-webkit-scrollbar-track {
+                border-radius: 10px;
+                height: 10px;
+            }
+            .productBoxes::-webkit-scrollbar-thumb {
+                background: rgb(192, 192, 192);
+                height: 10px;
+                border-radius: 10px;
+                transition: 0.4s;
+            }
+            .productBoxes::-webkit-scrollbar-track:hover {
+                border-radius: 10px;
+                transition: 0.4s;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            .productBoxes::-webkit-scrollbar-thumb:hover {
+                background: rgb(192, 192, 192);
+                border-radius: 10px;
+            }
+                .productBoxes .productBox{
+                    display: flex;
+                    flex-direction: column;
+                    width: 200px;
+                    height: 260px;
+                    border-radius: 10px;
+                    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+                    margin-right: 10px;
+                }
+                    .productBox .productBoxHeader{
+                        display: flex;
+                        width: 100%;
+                        height: 75%;
+                        background-color: rgb(129, 129, 129);
+                        border-radius: 10px 10px 0px 0px;
+                    }
+                        .productBoxHeader .head{
+                            display: flex;
+                            width: 200px;
+                            align-self: flex-start;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 3px 8px;
+                        }
+                            .head .shopName{
+                                opacity: 0.5;
+                            }
+                            .head .likes{
+                                display: flex;
+                                align-items: center;
+                                padding: 0px;
+                            }
+                                .likes p{
+                                    padding: 0px;
+                                    margin: 0px;
+                                    margin-right: 5px;
+                                    font-weight: 1000;
+                                }
+                    .productBox .productBoxFooter{
+                        display: flex;
+                        width: 100%;
+                        padding: 5px;
+                        align-items: center;
+                        flex-grow: 2;
+                    }
+                        .productBoxFooter .productValues{
+                            display: flex;
+                            padding: 5px;
+                            flex-direction: column;
+                            width: 75%;
+                            height: 100%;
+                        }
+                            .productValues .modelValue{
+                                padding: 0px;
+                                font-weight: 1000;
+                                font-size: 16px;
+                            }
+                            .productValues .priceValue{
+                                font-family: 'Samsung Sans Thin';
+                                font-size: 24px;
+                                color: #B5B5B5;
+                            }
+                        .productBoxFooter .brandLogo{
+                            display: flex;
+                            flex-grow: 2;
+                            height: 50px;
+                        }
+
+                           
+
+/* Spécifications */
+    html,body{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-image: url('../img/ps4-tournaments-fifa-20-bg-02-us-17sep19.jfif'); */
+    }
+    .header{
+        background-position: top;
+        background-image: url('../img/mockup-of-a-young-black-woman-with-dreadlocks-wearing-a-tshirt-mockup-while-under-the-sun-a15941.png');
+    }
+
+/* -- Catégories */
+    .searchLogo{
+        background-image: url('../img/logo_search_gray.svg');
+    }
+    .logo.chaussures_femmes{
+        background-image: url('../img/icons8_women_shoe_side_view_filled.svg');
+    }
+    .logo.maillots_de_sport{
+        background-image: url('../img/icons8_basketball_jersey_filled.svg');
+    }
+    .logo.robes_pour_femme{
+        background-image: url('../img/icons8_little_black_dress.svg');
+    }
+    .logo.chaussures_hommes{
+        background-image: url('../img/icons8_fireman_boots_filled.svg');
+    }
+    .logo.ceintures{
+        background-image: url('../img/icons8_watches_clasp_filled.svg');
+    }
+    .logo.accessoires_hommes{
+        background-image: url('../img/icons8_comb.svg');
+    }
+
+    /* -- Le box des produits */
+.logo.wide{
+    background-image: url('../img/icons8_squared_menu_filled_1.svg');
+}
+.logo.lists{
+    background-image: url('../img/icons8_menu_filled.svg');
+}
+
+    /*-- Un bloc produit*/
+.logo.like{
+    background-image: url('../img/icons8_like_filled.svg');
+    opacity: 0.3;
+}
+.productBoxHeader{
+    background-image: url('../img/product_converse.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer */
+    .footer{
+        background-image: url('../img/6346.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .HM{
+        background-image: url('../img/1200px-H&M-Logo.svg.png');
+    }
+    .Levis{
+        background-image: url('../img/levi-logo.png');
+    }
+    .Supreme{
+        background-image: url('../img/1200px-Supreme_Logo.svg.png');
+    }
+    .whatsapp{
+        background-image: url('../img/icons8_whatsapp_1.svg');
+    }
+    .facebook{
+        background-image: url('../img/icons8_facebook_2.svg');
+    }
+    .instagram{
+        background-image: url('../img/icons8_instagram_new_1.svg');
+    }

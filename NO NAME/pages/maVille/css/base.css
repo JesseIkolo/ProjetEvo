@@ -1,0 +1,271 @@
+/* -------  POLICES  ------- */
+
+    /* Samsung Sans */
+        @font-face{
+            font-family: 'Samsung Sans Thin';
+            src: url('../fonts/SamsungSans-Thin.ttf');
+        }
+        @font-face{
+            font-family: 'Samsung Sans Light';
+            src: url('../fonts/SamsungSans-Light.ttf');
+        }
+        @font-face{
+            font-family: 'Samsung Sans';
+            src: url('../fonts/SamsungSans-Regular.ttf');
+        }
+        @font-face{
+            font-family: 'Samsung Sans Medium';
+            src: url('../fonts/SamsungSans-Medium.ttf');
+        }
+        @font-face{
+            font-family: 'Samsung Sans Bold';
+            src: url('../fonts/SamsungSans-Bold.ttf');
+        }
+
+    /* Quicksand */
+        @font-face{
+            font-family: 'Quicksand Light';
+            src: url('../fonts/Quicksand-Light.ttf');
+        }
+        @font-face{
+            font-family: 'Quicksand';
+            src: url('../fonts/Quicksand-Regular.ttf');
+        }
+        @font-face{
+            font-family: 'Quicksand Medium';
+            src: url('../fonts/Quicksand-Medium.ttf');
+        }
+        @font-face{
+            font-family: 'Quicksand Semibold';
+            src: url('../fonts/Quicksand-SemiBold.ttf');
+        }
+        @font-face{
+            font-family: 'Quicksand Bold';
+            src: url('../fonts/Quicksand-Bold.ttf');
+        }
+
+/* -------  SCROLLBARS  ------- */
+
+    /* Largeur */
+    ::-webkit-scrollbar {
+        width: 5px;
+        transition: 0.3s;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track:hover {
+        border-radius: 10px;
+        transition: 0.4s;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb:hover {
+        background: white;
+        border-radius: 10px;
+    }
+
+
+/* -------  STANDARDS (COMMUNS A TOUTES LES PAGES)  ------- */
+
+    *,*::before,*::after{
+        box-sizing: border-box;
+    }
+
+    a, a:hover{
+        text-decoration: none;
+    }
+    html, body{
+        font-family: 'Samsung Sans Light';
+        font-size: 13px;
+    }
+
+    /* EN-TETE */
+    .header{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        z-index: 10000;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0px 0px 50px 50px;
+        flex-direction: column;
+        box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.36);
+    }
+        .header .tabLinks{
+            display: flex;
+            width: 100%;
+            height: max-content;
+            justify-content: space-evenly;
+            align-self: flex-start;
+            flex-flow: row wrap;
+            align-items: center;
+            padding: 20px 0px;
+            font-size: 17px;
+        }
+            .tabLinks .tabLink{
+                color: white;
+                border-top: 0px solid white;
+                border-bottom: 0px solid white;
+                padding: 0px 0px;
+                transition: 0.2s;
+            }
+                .tabLink.hide-item{
+                    transform: scale(0);
+                }
+                .tabLinks .tabLink:hover{
+                    transition: 0.4s;
+                    border-top: 1px solid white;
+                    border-bottom: 1px solid white;
+                    padding: 14px 0px;
+                }
+    
+            .tabLinks .top50{
+                font-family: 'moonhouse';
+            }
+            .tabLinks .search{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tabLinks .loginLink:hover{
+                border-top: 0px solid white;
+                border-bottom: 0px solid white;
+                padding: 0px;
+            }
+            .tabLinks .loginBox{
+                display: flex;
+                border-radius: 10px;
+                color: white;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+                .loginBox:hover{
+                    transition: 0.4s;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+                .loginBox .loginPic{
+                    margin-right: 15px;
+                    height: 30px;
+                    width: 30px;
+                }
+
+
+    /* PROPRIETES COMMUNES*/
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .darkBg{
+        background: transparent;
+        backdrop-filter: blur(30px);
+        --webkit-backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0.788);
+    }    
+    .lightBg{
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 10px 0px 12px rgba(0, 0, 0, 0.25);
+    }
+    .btnRounded{
+        padding: 20px;
+        cursor: pointer;
+        margin-top: 30px;
+        border: 0px;
+        border-radius: 30px;
+        background-color: #FA5A66;
+        color: white;
+        font-size: 17px;
+        font-family: 'Samsung Sans Black';
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+    }
+        .btnRounded:hover{
+            background-color: white;
+            padding: 25px;
+            border-radius: 35px;
+            color: black;
+            transition: 0.4s;
+        }
+        .search-form{
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 44px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+        }
+            .search-form.active{
+                opacity: 1;
+                transition-delay: 0.2s;
+                transform: translateX(-50%);
+                visibility: visible;
+            }
+            .search-form input{
+                width: 100%;
+                font-family: 'Samsung Sans Light';
+                height: 90px;
+                background: transparent;
+                color: #fff;
+                border: none;
+                outline: none;
+                font-size: 20px;
+            }
+            .search-form::before{
+                position: absolute;
+                top: 12px;
+                left: -26px;
+                font-size: 18px;
+                color: #fff;
+            }
+
+    
+    .logo{
+        background-position: center;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+    .img{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* SPECIFICATIONS COMMUNES */
+
+    .logo.search{
+        background-image: url('../../../img/logo_search_white.svg');
+    }
+    .logo.search.black{
+        background-image: url('../../../img/icons8_search_black.svg');
+    }
+    .logo.loginPic{
+        background-image: url('../../../img/logo_user_white.svg');
+    }
+    .logo.loginPic.black{
+        background-image: url('../../../img/user_black.svg');
+    }
+    

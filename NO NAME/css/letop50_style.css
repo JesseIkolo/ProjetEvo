@@ -1,0 +1,223 @@
+.header{
+    background-image: url('../img/b9236930ce5046bd6f4eeb4b48726bbb.jpg');
+}
+.box{
+    border: 0px solid red;
+}
+.btnRounded{
+    margin-top: 0px;
+}
+
+
+.shopBox{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    padding: 5px;
+    overflow-x: hidden;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+}
+    .shopBox .pictureDescription{
+        display: flex;
+        padding: 0px;
+        background-color: rgb(138, 138, 138);
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px 0px 0px 15px;
+        width: 65%;
+    }
+        .pictureDescription .shopPicHeader{
+            display: flex;
+            justify-content: space-between;
+            border-radius: 15px 0px 0px 0px;
+            height: 100px;
+            background-image: linear-gradient(to bottom,black, rgba(0, 0, 0, 0));
+        }
+            .shopPicHeader .rankBox{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                background-color: black;
+                color: white;
+                font-family: 'Samsung Sans Medium';
+                padding: 0px 25px;
+                border-radius: 8px;
+                font-size: 20px;
+                height: 50px;
+            }
+            .shopPicHeader .profilePicBox{
+                width: 50px;
+                height: 50px;
+                background-color: gray;
+                border-radius: 100%;
+            }
+            .shopPicHeader .shopNameBox{
+                display: flex;
+                width: 430px;
+                color: white;
+                height: 60px;
+                flex-direction: column;
+            }
+                .shopNameBox .shopDenomination{
+                    display: flex;
+                    align-items: center;
+                }
+                    .shopDenomination .shopName{
+                        font-size: 28px;
+                        font-family: 'Samsung Sans Bold';
+                    }
+                    .shopDenomination .shopType{
+                        font-size: 20px;
+                        font-family: 'Samsung Sans Light';
+                    }
+
+        .pictureDescription .shopPicsGallery{
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 10px;
+            height: 165px;
+            width: 100%;
+            overflow: auto;
+            border-radius: 0px 0px 0px 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+            .shopPicsGallery .shopPics{
+                display: flex;
+                padding: 5px;
+                overflow: auto;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                height: 100%;
+                width: calc(100%-30px);
+            }
+                .shopPics .shopPic{
+                    height: 100%;
+                    width: 150px;
+                    border-radius: 10px;
+                    background-color: white;
+                    margin-right: 10px;
+                }
+                
+    .shopBox .textDescription{
+        display: flex;
+        flex-direction: column;
+        background-color: #1E1E1E;
+        border-radius: 0px 15px 15px 0px;
+        flex-grow: 2;
+    }
+        .textDescription .descHeader{
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+        }
+            .descHeader .followersValue{
+                display: flex;
+                align-items: center;
+                font-family: 'Samsung Sans';
+                font-size: 18px;
+                color: white;
+            }
+            .descHeader .cityLocation{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                background-color: #7E8BA1;
+                color: white;
+                font-family: 'Samsung Sans Medium';
+                padding: 0px 25px;
+                border-radius: 8px;
+                font-size: 20px;
+                height: 50px;
+            }
+
+        .textDescription .descBody{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-family: 'Samsung Sans Light';
+            font-size: 20px;
+            height: 100%;
+        }
+        .textDescription .descFooter{
+            display: flex;
+            justify-content: center;
+            height: 150px;
+        }
+            .descFooter .btnRounded{
+                display: flex;
+                align-items: center;
+                height: 52px;
+                border-radius: 9px;
+                background: #ff477f;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            }
+                .btnRounded:hover{
+                    background: white;
+                }
+
+.rankBox.topOne{
+    background-color: rgb(216, 186, 14);
+}
+.rankBox.silver{
+    background-color: silver;
+}
+.rankBox.bronze{
+    background-color: rgb(165, 97, 42);
+}
+
+/* SPECIFICATIONS */
+
+    /* GHOSTRUNNER */
+        .shop-ghostrunner-preview{
+            background-image: url('../img/slide3home_92_fr.jpg');
+        }
+        .img.shop-ghostrunner-profile{
+            background-image: url('../img/39ebd1b6e18a517029607c48e1c122eb.jpg');
+        }
+        
+    /* BELLO */
+        .shop-bello-preview{
+            background-image: url('../img/slide2home_91_fr.jpg');
+        }
+        .img.shop-bello-profile{
+            background-image: url('../img/flat\,750x\,075\,f-pad\,750x1000\,f8f8f8.u2.jpg');
+        }
+
+    /* LASAPE */
+        .shop-lasape-preview{
+            background-image: url('../img/slide1home_90_fr.jpg');
+        }
+        .img.shop-lasape-profile{
+            background-image: url('../img/designer-wedding-dress-berta-a-paris-france-logo-1.jpg');
+        }
+
+    /* ETOILE BRILLANTE */
+        .shop-etoilebrillante-preview{
+            background-image: url('../img/magasin-vetements-luxe-lyon6e.jpg');
+        }
+        .img.shop-etoilebrillante-profile{
+            background-image: url('../img/Untitled-3.png');
+        }
+
+    /* GUNROAD */
+        .shop-gunroad-preview{
+            background-image: url('../img/p1030316.jfif');
+        }
+        .img.shop-gunroad-profile{
+            background-image: url('../img/tumblr_poeacwMJ961uu498p_540.jpg');
+        }
+
+    /* CAGYL */
+        .shop-cagyl-preview{
+            background-image: url('../img/ceccf860-52924201_2123209741097715_5279855686983876608_o.jpg');
+        }
+        .img.shop-cagyl-profile{
+            background-image: url('../img/c4e9cd1091757c2f2a4e529d542d07a8_original.jpg');
+        }
+            

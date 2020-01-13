@@ -1,0 +1,220 @@
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Samsung Sans Light';
+    background-color: #111111;
+    font-size: 13px;
+    scroll-behavior: smooth;              
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* Standards */
+
+.logo{
+    border: 0px solid rgb(255, 28, 28);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.text-important{
+    font-weight: bold;
+}
+.text-link{
+    color: #FA5A66;
+}
+.box {
+    display: flex;
+    border: 0px solid red;
+    padding: 5px;
+}
+
+/* Fin standards*/
+
+.header{
+    height: 550px;
+    box-shadow: none;
+}
+    .tabLinks a{
+        color: white;
+        border-top: 0px solid white;
+        border-bottom: 0px solid white;
+    }
+        .tabLinks a:hover{
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+
+    .tabLinks .loginLink:hover{
+        border-top: 0px solid white;
+        border-bottom: 0px solid white;
+    }
+    .tabLinks .loginBox{
+        color: white;
+    }
+        .loginBox:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+    .header .headBanner{
+        display: flex;
+        flex-grow: 2;
+        flex-direction: column;
+        font-family: 'Samsung Sans';
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .header .inputSearch{
+        display: flex;
+        align-items: center;
+        width: 35%;
+    }
+        .inputSearch #mainsearch{
+            outline: none;
+            border-radius: 25px;
+            width: 100%;
+            border: 0px solid;
+            font-size: 18px;
+            font-family: 'Samsung Sans Light';
+            padding: 15px 30px 15px 50px;
+            color: #cacaca;
+            background-color: rgb(26, 26, 26);
+        }
+            #mainsearch::placeholder{
+                color: #686868;
+            }
+            #mainsearch:focus{
+                background-color: white;
+                color: black;
+            }
+
+        .inputSearch .searchLogo{
+            display: flex;
+            position: absolute;
+            margin-left: 12px;
+        }
+
+.flow{
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: column;
+    width: 150vh;
+}
+    .flow .flowHeader{
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+    }
+        .flowHeader .headerTitle{
+            display: flex;
+            align-items: center;
+            font-family: 'Samsung Sans';
+            color: white;
+            font-size: 23px;
+        }
+        .flowHeader .headerControls{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+        }
+            .headerControls .headerControl{
+                font-size: 22px;
+                cursor: pointer;
+                font-family: 'Samsung Sans Medium';
+                color: #4b4b4b;
+                transition: 0.3s;    
+            }
+                .headerControl:hover{
+                    color: #686868;
+                    transition: 0.4s;
+                }
+                .headerControl.selected{
+                    padding: 10px 25px;
+                    background-color: white;
+                    color: black;
+                    border-radius: 30px;
+                }
+
+    .flow .categories{
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 35px;
+    }
+        .categories .categoryBox{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            width: 33.33%;
+            padding: 40px 0px;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            height: 330px;
+            transition: 0.3s;
+        }
+            .categoryBox:hover{
+                background-color: rgba(255, 255, 255, 0.055);
+                transition: 0.4s;
+            }
+            .categoryBox .categoryLogo{
+                border: 0px solid red;
+                height: 75%;
+                width: 75%;
+            }
+            .categoryBox .categoryName{
+                font-family: 'Samsung Sans Medium';
+                text-align: center;
+                display: flex;
+                color: #ABABAB;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 2;
+                font-size: 25px;
+                width: 75%;
+            }
+
+/* -- Catégories */
+    .searchLogo{
+        background-image: url('../img/logo_search_gray.svg');
+    }
+    .logo.chaussures_femmes{
+        background-image: url('../img/icons8_women_shoe_side_view_filled.svg');
+    }
+    .logo.maillots_de_sport{
+        background-image: url('../img/icons8_basketball_jersey_filled.svg');
+    }
+    .logo.robes_pour_femme{
+        background-image: url('../img/icons8_little_black_dress.svg');
+    }
+    .logo.chaussures_hommes{
+        background-image: url('../img/icons8_fireman_boots_filled.svg');
+    }
+    .logo.ceintures{
+        background-image: url('../img/icons8_watches_clasp_filled.svg');
+    }
+    .logo.accessoires_hommes{
+        background-image: url('../img/icons8_comb.svg');
+    }
+
+

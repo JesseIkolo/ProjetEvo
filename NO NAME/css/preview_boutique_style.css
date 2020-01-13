@@ -1,0 +1,951 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Samsung Sans Light';
+    background-color: #181818;
+    font-size: 13px;       
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/*  Standards    */
+
+.logo{
+    /* border: 1px solid rgb(255, 28, 28); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    /* border: 1px solid rgb(106, 199, 12); */
+    cursor: pointer;
+}
+.flexbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(51, 51, 51); */
+}
+.text-important{
+    font-weight: bold;
+}
+.text-link{
+    color: #FA5A66;
+}
+.column{
+    flex-direction: column;
+}
+.box{
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 5px;
+}
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(192, 192, 192);
+    margin: 20px 0px;
+}
+
+/*  Fin standards   */
+
+
+header{
+    width: 100%;
+    background-color: RGB(2,2,2);
+    height: 170px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    .container .tabLinks{
+        display: flex;
+        width: 100%;
+        height: max-content;
+        justify-content: space-evenly;
+        align-self: flex-start;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 20px 0px;
+        font-size: 17px;
+    }
+        .tabLinks a{
+            color: white;
+            transition: 0.4s;
+        }
+            .tabLinks a:hover{
+                transition: 0.4s;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                padding: 14px 0px;
+            }
+
+        .tabLinks .top50{
+            font-family: fantasy;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .tabLinks .search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tabLinks .loginBox{
+            display: flex;
+            border: 1px solid blue;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+            .loginBox .loginPic{
+                margin-right: 15px;
+                height: 30px;
+                width: 30px;
+            }
+
+    .container .mainbanner{
+        display: flex;
+        flex-flow: row wrap;
+        border: 2px solid rgb(0, 255, 242);
+        flex-grow: 2;
+    }
+
+
+
+    .container .grouptext p 
+    {
+        display: flex;
+        justify-content:  flex-end;
+        padding-right: 200px;
+        margin-top: -13px;
+       
+    }
+    .container .grouptext p .tx1
+    {
+        font-weight: bold;
+        color: white;
+        font-size: 15px;
+        margin-top: -13px;
+  
+    }
+    .container .grouptext p .tx2
+    {
+      font-size: 32px;
+      font-weight: lighter ;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 15px;
+      margin-top: -25px;
+      text-decoration-color: white;
+      color: white;
+
+    }
+  
+  
+    .grouptext .link 
+    {
+        display: flex;
+        justify-content: flex-end;
+        text-decoration: none;
+        color: white;
+        font-size: 32;
+        font-weight: lighter;
+        padding-right: 65px;
+       margin-top: -65px;
+        
+    }
+    .grouptext .link:hover
+    {
+      color: #8c76ec;
+    }                 
+
+
+    .section1
+    {
+     height: 500px;
+    background-image: url('../img/dresses-816033.jpg' );
+     background-size: 1400px ;
+     color: white;
+    }
+   
+     .cont 
+    {
+        
+      
+       display: flex;
+       justify-content: center; 
+       padding-top: 35px;   
+       padding-right: 800px; 
+      
+   
+    }
+    .cont .text     /* integartion bouton ajouter aux favoris*/
+    {
+        padding-top: 6px;
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 15px;
+        background:rgb(243, 243, 243) ;
+        height: 29px;
+        width: 280px;
+        text-align: center;
+        opacity: 99%;
+        color: rgb(77, 75, 75);
+    }
+    .cont .text
+   {
+       opacity: none;
+   }
+   .favoris
+   {
+       display: flex;
+       justify-content: flex-end;
+       padding-right: 300px;
+       flex-direction: row;
+   text-align: center;
+       
+   }
+    .favoris .text
+    {
+       display: flex;
+     flex-direction: row;
+       padding-right: 400px;
+       margin-top: -35px;   
+       border-radius: 15px;
+       height: 40px;
+       background: white;
+       color: black;
+       width: -10px;
+       text-align: center;
+   
+    
+    }
+   
+    .section2
+    {
+       
+        height: 2150px;
+        width: 800px;
+        border-radius: 25px;
+        background: white;
+        margin-left: 250px;
+        margin-top: 100px;
+        color: black;
+   
+    }
+    .container3 .nomuser .Nom
+    {
+        display: flex;
+        
+        font-weight: 800;
+        font-size: 33px;
+        padding-left: 150px;
+        margin-top: 18px;
+
+    }
+
+    
+   .container3 .nomuser .boutiquenom
+   {
+       display: flex;
+       flex-direction: column;
+       padding-right: 335px;
+       text-align: center;
+       margin-top: -70px;
+   }
+    .container3 .nomuser .titre 
+    {
+        padding-right: 230px;
+        text-align: center;
+    }
+    .container3 .nomuser .boutiquenom .t1 
+   {
+     font-weight: 300;
+     font-size: 18px;
+   }
+   .container3 .nomuser .certifier
+   {
+       display: flex;
+       justify-content: flex-end;
+       padding-right: 350px;
+       margin-top: -48px;
+   }
+
+   .container3 .btnAbonnement 
+   {
+     display: flex;
+     justify-content: flex-end;
+     padding-right: 130px;
+     margin-top: -30px;
+     
+   }
+   /* .infosboutique span h4
+   {
+
+   } */
+   .container3 .btnAbonnement .abo1
+   {
+       font-weight: 900;
+       font-size: 19px;
+       text-align: center;
+       text-decoration:none;
+       height: 30px;
+       width: 100px;
+       background: RGB(250,90,102);
+       border-radius:5px;
+       color: white;
+
+   }
+
+
+    .container3 h5
+    {
+       font-size: 14px;
+   
+        text-align: center;
+        font-weight: 800;
+        color: rgb(214, 208, 208);
+        text-decoration-color: rgb(82, 79, 79);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container3  .titre1
+    {
+      font-weight: 600;  
+       
+    }
+    .container3 .titre1
+    {
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+    }
+
+    .container3 .description
+    {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+   
+    }
+    .container3 .infosboutiques h4
+ {
+     padding-top: 10px;
+     padding-left: 35px;
+     text-align: center;
+   font-size: 25px;
+   font-weight: 600;
+ }
+    .stats
+    {
+        padding-top: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 5px;
+        padding-left: 5px;
+      
+    }
+    .stats .containerstats
+    {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding-right: 5px;
+        padding-left: 5px;
+        height: 95px;
+        width: 700px;
+        border-radius: 15px;
+        padding-top: 10px;
+        background: rgb(241, 241, 241);
+
+      
+    }
+    .stats .containerstats .stat1
+    {
+        padding-top: 8px;
+       display: flex;
+       flex-direction: column;
+       height: 55px;
+       width: 100px;
+       
+       text-align: center;
+    }
+    .stats .stat1 .visite
+    {
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    .stats .stat1 .carac1
+    {
+        font-weight: lighter;
+        font-size: 17px;
+        
+    }
+   
+    .stats .stat2 .followers
+    {
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    .stats .stat2 .carc2
+    {
+        font-weight: lighter;
+        font-size: 17px;
+        
+    }
+    .stats .stat3 .Note
+    {
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    .stats .stat3 .carac3
+    {
+        font-weight: lighter;
+        font-size: 17px;
+        
+    }
+    .stats .stat4 .Rang
+    {
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    .stats .stat4 .carac4
+    {
+        font-weight: lighter;
+        font-size: 17px;
+        
+    }
+   
+   
+   
+    .stats .containerstats .stat2
+    {
+        padding-top: 8px;
+       display: flex;
+       flex-direction: column;
+       height: 55px;
+       border-radius: 10px;
+       width: 100px;
+       text-align: center;
+    }
+    .stats .containerstats .stat3
+    {
+        padding-top: 8px;
+       display: flex;
+       flex-direction: column;
+       height: 55px;
+       border-radius: 10px;
+       width: 100px;
+       text-align: center;
+    }
+   
+    .stats  .containerstats .stat4
+    {
+        padding-top: 8px;
+       display: flex;
+       flex-direction: column;
+       height: 55px;
+       border-radius: 10px;
+       width: 100px;
+       text-align: center;
+       border-right: silver;
+       
+      
+    }
+    .stats  .containerstats  .img4
+    {
+       padding-top: 20px;
+    }
+   
+
+
+    .stats  .containerstats .stat4 .Rang
+    {
+        color: RGB(193,123,62);
+    }
+    .stats  .containerstats .stat1 .carac1
+    {
+        font-weight: 700;
+    }
+    .stats  .containerstats .stat2 .carac2
+    {
+        font-weight: 700;
+        font-size: medium;
+  
+    }
+    .stats  .containerstats .stat3 .carac3
+    {
+        font-weight: 700;
+
+    }
+    .stats  .containerstats .stat4 .carac4
+    {
+        font-weight: 700;
+
+    }
+
+
+    .infosboutique h4
+    {
+        padding-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .infosboutique h4 .nbr
+    {
+        font-weight: lighter;
+        color: silver;
+    }
+    .infosboutique .photos
+    {
+       display: flex;
+       justify-content: flex-start;
+      padding-left: 35px;
+     
+   
+   
+    }
+    .infosboutique .photos2
+    {
+       display: flex;
+       justify-content: flex-end;
+      padding-right: 150px;
+      margin-top: -205px;
+     
+   
+   
+    }
+    .infosboutique .photos2 .imgi2 .i2 
+    {
+       
+        border-radius: 15px;
+        box-shadow:1px 1px 1px 1px  silver;
+
+    }
+    .infosboutique .photos .imgi1 .i1 
+    {
+       
+        border-radius: 15px;
+        box-shadow:1px 1px 1px 1px  silver;
+
+    }
+   
+    .infosboutique .photos .i2
+    {
+        display: flex;
+       justify-content: flex-start;
+        border-radius: 15px;
+   
+    }
+    .infosboutique .btnAfficher
+    {
+        display: flex;
+        justify-content: flex-end;
+      
+        margin-top: -205px;
+        padding-right: 30px;
+      
+    }
+ 
+    .infosboutique .btnAfficher .imgi3 .i3 
+    {
+        border-radius: 15px;
+
+    }
+
+
+    .container3 .notification {
+       display: flex;
+       justify-content: flex-end;
+       padding-right: 35px;
+       padding-top: 2px;
+   
+    }
+        .container3 .logo img
+        {
+            margin-top: -40px;
+        }
+    .btnfavoris
+    {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 350px ;
+        margin-top: -28px;
+        text-align: center;
+   
+    }
+    .btnfavoris  .a1
+    {
+        padding-top: 4px;
+       text-decoration: none;
+       color: black;
+      border-radius: 15px;
+      background: white;
+      height: 26px;
+      text-align: center;
+      width: 200px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 200;
+      font-size: 15px;
+    }
+    .btncontacter
+    {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 150px ;
+        margin-top: -32px;
+        text-align: center;
+   
+    }
+   
+    .btncontacter  .a2
+    {
+        padding-top: 5px;
+       text-decoration: none;
+       color: white;
+      border-radius: 15px;
+      background: RGB(14,239,21);
+      height: 28px;
+      text-align: center;
+      width: 160px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+    }
+   
+
+/* Information de la boutique sur les produits vendu*/
+
+.infosboutique2 h4
+{
+    padding-left: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+    .infosboutique2 .photos
+    {
+       display: flex;
+       justify-content: flex-start;
+      padding-left: 35px;
+     
+   
+   
+    }
+    .infosboutique2 .photos2
+    {
+       display: flex;
+       justify-content: flex-end;
+      padding-right: 443px;
+      margin-top: -203px;  
+    }
+
+     .infosboutique2 .photos3
+    {
+       display: flex;
+       justify-content: flex-end;
+       padding-right: 276px;
+       margin-top: -203px;  
+    }
+     .infosboutique2 .photos4
+    {
+       display: flex;
+       justify-content: flex-end;
+      padding-right: 110px;
+      margin-top: -203px;  
+    }
+    .infosboutique2 .photos2 .imgi2 .i2 
+    {
+       
+        border-radius: 15px;
+        box-shadow:2px 2px 2px 2px  silver;
+
+
+    }
+    .infosboutique  .trait  /* trait de separation*/
+    {
+       display: flex;
+       justify-content: flex-end;
+       padding-right: 42px;
+    }
+    .infosboutique2 .photos .imgi1 .i1 
+    {
+       
+        border-radius: 15px;
+        box-shadow:2px 2px 2px 2px  silver;
+
+
+    }
+   .infosboutique2 .photos3 .imgi3 .i3 
+    {
+       
+        border-radius: 15px;
+        box-shadow:2px 2px 2px 2px  silver;
+
+
+    }
+    .infosboutique2 .photos4 .imgi4 .i4 
+    {
+       
+        border-radius: 15px;
+        box-shadow:2px 2px 2px 2px  silver;
+
+
+    }
+    .infosboutique2 .photos .i2
+    {
+        display: flex;
+       justify-content: flex-start;
+        border-radius: 15px;
+        border: silver;
+   
+    }
+    .infosboutique2 .btnAfficher
+    {
+        display: flex;
+        justify-content: flex-end;
+      
+        margin-top: -203px; 
+        padding-right: 30px;
+      
+    }
+ 
+    .infosboutique2 .btnAfficher .imgi5 .i5 
+    {
+        border-radius: 15px;
+
+
+    }
+
+    .infosboutique2 .btnAfficher .imgi5 .i5:hover
+    {
+        background: cornflowerblue;
+    } 
+
+/* information sur les marque*/
+.infosboutique3 h4
+{
+    padding-left: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+    .infosboutique3 .photos
+    {
+       display: flex;
+       justify-content: flex-start;
+      padding-left: 35px;
+     
+   
+   
+    }
+    .infosboutique3 .photos2
+    {
+       display: flex;
+       justify-content: flex-end;
+      padding-right: 355px;
+      margin-top: -220px;  
+      
+    }
+
+  
+     .infosboutique3 .photos4
+    {
+       display: flex;
+       justify-content: flex-end;
+      padding-right: 135px;
+      margin-top: -220px;  
+    }
+    .infosboutique3 .photos2 .imgi2 .i2 
+    {
+       
+        border-radius: 15px;
+        box-shadow:2px 2px 2px 2px  silver;
+
+    }
+    .infosboutique2  .trait  /* trait de separation*/
+    {
+       display: flex;
+       justify-content: flex-end;
+       padding-right: 42px;
+    }
+    .infosboutique3 .photos .imgi1 .i1 
+    {
+       
+        border-radius: 15px;
+        box-shadow:2px 2px 2px 2px  silver;
+
+
+    }
+ 
+    .infosboutique3 .photos4 .imgi4 .i4 
+    {
+       
+        border-radius: 15px;
+        box-shadow:2px 2px 2px 2px  silver;
+
+
+    }
+    .infosboutique3 .photos .i2
+    {
+        display: flex;
+       justify-content: flex-start;
+        border-radius: 15px;
+        border: silver;
+   
+    }
+    .infosboutique3 .btnAfficher
+    {
+        display: flex;
+        justify-content: flex-end;
+      
+        margin-top: -220px;  
+        padding-right: 30px;
+      
+    }
+ 
+    .infosboutique3 .btnAfficher .imgi5 .i5 
+    {
+        border-radius: 15px;
+        border: silver;
+
+    }
+.infosboutique4 .pdg
+{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(83, 83, 83);
+    font-weight: 700;
+}
+ 
+.infosboutique4 .MOtduPdG
+{
+    text-align: center;
+    font-size: 35px;
+      font-weight: 300;
+      color: rgb(143, 142, 142);
+
+}
+
+.infosboutique4 .btncontacter2
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 525px;
+    
+}
+.infosboutique4 .btncontacter2 .contacter2
+{
+    font-size: 20px;
+    font-weight: 900;
+    height: 40px;
+    width: 160px;
+    color: black;
+    box-shadow: 1px 1px 1px 1xp black;
+    border: 1px rgb(59, 59, 59) solid;
+   text-align: center;
+   border-radius:8px ;
+    
+
+}
+.infosboutique4 .motdefin
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 320px;
+    margin-top: -58px;
+}
+.infosboutique4 .motdefin h5
+{
+    font-size: 17px;
+    color: rgb(143, 142, 142);
+
+}
+.infosboutique4 .approuve
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 280px;
+    margin-top: -50px;
+
+}
+
+.footer
+{
+    margin-left: 250px;
+    margin-top: -200px;
+    height: 300px;
+    border-radius: 15px;
+    width: 800px;
+    background: RGB(250,90,102);
+}
+
+.footer .titre
+{
+padding-top: 07px;
+padding-left: 30px;
+}
+.footer .titre h4
+{
+    font-size: 20px;
+}
+
+.footer .bloc1
+{
+    height: 210px;
+    width: 250px;
+    margin-left: 15px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 1px 1px 1px 1px silver;
+}
+.footer .bloc2
+{
+    height: 210px;
+    width: 250px;
+    margin-left: 350px;
+    margin-top: -210px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 1px 1px 1px 1px silver;
+}
+/* Spécifications */
+
+.header{
+    background-image: url('');
+}
+    /* -- Catégories */
+.tabLinks .search{
+    background-image: url('../img/logo_search_white.svg');
+}
+.searchLogo{
+    background-image: url('../img/logo_search_gray.svg');
+}
+.loginPic{
+    background-image: url('../img/logo_user_white.svg');
+}

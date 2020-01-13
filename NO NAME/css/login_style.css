@@ -1,0 +1,275 @@
+@font-face{
+    font-family: 'Samsung Sans Light';
+    src: url('../fonts/SamsungSans-Light.ttf');
+}
+@font-face{
+    font-family: 'Samsung Sans Thin';
+    src: url('../fonts/SamsungSans-Thin.ttf');
+}
+@font-face{
+    font-family: 'Samsung Sans Medium';
+    src: url('../fonts/SamsungSans-Medium.ttf');
+}
+@font-face{
+    font-family: 'Samsung Sans';
+    src: url('../fonts/SamsungSans-Regular.ttf');
+}
+@font-face{
+    font-family: 'Quicksand Light';
+    src: url('../fonts/Quicksand-Light.ttf');
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Samsung Sans';
+    background-color: white;
+    font-size: 13px;       
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 950px){
+    .joinCommunity.flexbox{
+        display: none;
+    }
+}
+
+/* Standards */
+
+.logo{
+    /* border: 1px solid rgb(255, 28, 28); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+.flexbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(51, 51, 51); */
+}
+.text-important{
+    font-weight: bold;
+}
+.text-link{
+    color: #FA5A66;
+}
+.column{
+    flex-direction: column;
+}
+
+/* Fin standards*/
+
+
+
+
+.joinCommunity.flexbox{
+    background-image: url('../img/6346.jpg');
+    background-size: cover;
+    transition: 500ms;
+    color:white;
+    height: 100%;
+    width: 470px;
+    justify-content: center;
+    font-family: 'Quicksand Light';
+    border-radius: 0px 50px 50px 0px;
+    /* background: url(...); */
+}
+    .joinCommunity .mainText{
+        font-size: 43px;
+        width: min-content;
+    }
+    .joinCommunity .marquesDispo{
+        position: absolute;
+        justify-self: flex-end;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50%;
+    }
+        .marquesDispo .marques{
+            justify-content: space-between;
+            width: 100%;
+        }
+            .joinComBoxmarque{
+                height: 45px;
+                width: 55px;
+            }
+
+        .marquesDispo p{
+            font-size: 17px;
+        }
+
+.flow.flexbox{
+    display: flex;
+    justify-content: unset;
+    flex-direction: column;
+    font-family: 'Quicksand Regular';
+    flex-grow: 2;
+    height: 100%;
+    padding: 20px;
+}
+    .flow header{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+        .flow header .loginText{
+            display: flex;
+            font-size: 16px;
+            width: max-content;
+        }
+
+    .flow .title{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 60px;
+        font-size: 40px;
+    }
+        .title p{
+            margin: 0px;
+        }
+
+    .flow .mainForm{
+        display: flex;
+        padding: 0px 120px;
+        width: 100%;
+        flex-grow: 2;
+        flex-direction: column;
+        align-items: center;
+    }
+        .mainForm .inputs{
+            display: flex;
+            font-family: 'Samsung Sans';
+            width: 100%;
+            flex-direction: column;
+        }
+            .inputs .inputBlockBox{
+                margin-top: 25px;
+                width: 100%;
+                font-size: 17px;
+                padding: 0px 0px;
+            }
+                .inputBlockBox .input{
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+                    .input .txt{
+                        height: 45px;
+                        font-family: 'Samsung Sans Light';
+                        width: 100%;
+                        outline: none;
+                        font-size: 20px;
+                        padding: 30px 15px;
+                        border-radius: 10px;
+                        transition: 0.3s;
+                        background-color: #EFEFEF;
+                        border: 0px solid;
+                    }
+                        .txt::placeholder{
+                            font-family: 'Samsung Sans Light';
+                            color: rgb(187, 187, 187);
+                        }
+                        .txt:focus{
+                            background-color: white;
+                            transition: 0.5s;
+                            border: 1px solid rgb(52, 52, 243);
+                        }
+                    .input.NumTel .countryCode{
+                        position: absolute;
+                        display: flex;
+                        justify-self: flex-start;
+                        align-items: center;
+                        margin-left: -350px;
+                        font-size: 20px;
+                        color: rgb(175, 175, 175);
+                    }
+                        .countryCode .logo.countryFlag{
+                            height: 30px;
+                            width: 25px;
+                            margin-right: 7px;
+                        }
+                        
+                .inputBlockBox .blockBoxHeader{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                    .blockBoxHeader .passwordForgotLink{
+                        color: rgb(0, 81, 255);
+                        cursor: pointer;
+                    }
+
+                .inputBlockBox .input.Password .logo.displayPassword{
+                    position: absolute;
+                    height: 30px;
+                    width: 30px;
+                    margin-left: -12px;
+                }
+        .mainForm .stayConnectedBox{
+            font-size: 16px;
+            margin: 10px 0px;
+        }
+            .stayConnectedBox #stayConnect{
+                margin-right: 15px;
+            }
+
+        .mainForm #btnlogIn{
+            margin-top: 14px;
+            background-color: #FA5A66;
+            border: none;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px 0px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 15px;
+        }
+            #btnlogIn:hover{
+                background-color: #FA5A66;
+                background-color: rgb(221, 221, 221);
+                color: rgb(59, 59, 59);
+                transition: 0.7s;
+            }
+        
+
+/* Spécifications */
+.HM{
+    background-image: url('../img/1200px-H&M-Logo.svg.png');
+}
+.Levis{
+    background-image: url('../img/levi-logo.png');
+}
+.Supreme{
+    background-image: url('../img/1200px-Supreme_Logo.svg.png');
+}

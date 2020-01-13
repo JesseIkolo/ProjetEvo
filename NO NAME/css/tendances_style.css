@@ -1,0 +1,265 @@
+
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Samsung Sans Light';
+    background-color: #EEEEEE;
+    font-size: 13px;
+    scroll-behavior: smooth;              
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 760px){
+    .thirdbanner .coverBanner{
+        display: none;
+    }
+    .mainbanner .coverBanner{
+        display: none;
+    }
+    .secondbanner .coverBanner{
+        display: none;
+    }
+}
+
+/* Standards */
+
+.logo{
+    /* border: 1px solid rgb(255, 28, 28); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.coverBanner{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.flexbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(51, 51, 51); */
+}
+.text-important{
+    font-weight: bold;
+}
+.text-link{
+    color: #FA5A66;
+}
+.column{
+    flex-direction: column;
+}
+.box {
+    border: 0px solid red;
+}
+/* Fin standards*/
+
+.header{
+    height: 75%;
+    box-shadow: none;
+}
+    .header .tabLinks{
+        border: 0px solid red;
+    }
+        .tabLinks .tabLink{
+            color: black;
+            border-top: 0px solid black;
+            border-bottom: 0px solid black;
+        }
+            .tabLinks .tabLink:hover{
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            
+        .tabLinks .loginLink:hover{
+            border-top: 0px solid black;
+            border-bottom: 0px solid black;
+        }
+        .tabLinks .loginBox{
+            color: black;
+        }
+            .loginBox:hover{
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        .search-form input{
+            color: black;
+        }
+            .search-form input::placeholder{
+                color:rgba(0, 0, 0, 0.3);
+            }
+
+    .header .mainbanner{
+        display: flex;
+        flex-flow: row wrap;
+        flex-grow: 2;
+    }
+        .banner{
+            display: flex;
+            justify-content: center;
+            flex-grow: 2;
+            flex-flow: column wrap;
+            align-items: center;
+            height: 100%;
+            width: 60%;
+        }
+            .banner .flow{
+                width: 75%;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+                .flow h1, h2, h3, h4, h5{
+                    font-family: 'Samsung Sans Light';
+                    margin: 0px;
+                    font-weight: 500;
+                    font-size: 57px;
+                }
+                .flow .description{
+                    margin: 0px;
+                    margin-top: 10px;
+                    font-size: 17px;
+                }
+
+        .coverBanner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 40%;
+        }
+
+    .secondbanner{
+        background-color: #343434;
+        color: white;
+        flex-grow: 2;
+        border-radius: 90px;
+        padding: 60px 0px;
+        margin-top: 10px;
+    }
+        .secondbanner .banner{
+            width: 40%;
+        }
+            .secondbanner .banner .flow{
+                display: flex;
+                width: 75%;
+            }
+                .flow .rain{
+                    display: flex;
+                    align-self: center;
+                    height: 70px;
+                    width: 80px;
+                    margin-bottom: 20px;
+                }
+
+        .secondbanner .coverBanner{
+            width: 60%;
+        }
+
+    .thirdbanner{
+        background-color: white;
+        color: black;
+        border-radius: 90px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 660px;
+        padding: 0px 0px;
+        margin-top: 10px;
+    }
+        .thirdbanner .banner{
+            width: 55%;
+            height: 540px;
+        }
+            .thirdbanner .banner .flow{
+                display: flex;
+                width: 80%;
+            }
+                .banner .flow .ban{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                    .flow .ban .mini-title{
+                        margin: 10px 0px;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    .flow .ban .description{
+                        margin: 10px;
+                        text-align: center;
+                        font-size: 45px;
+                    }
+                    .flow .ban .big-text{
+                        margin: 0px;
+                        font-size: 130px;
+                        text-align: center;
+                    }
+
+        .thirdbanner .coverBanner{
+            width: 45%;
+        }
+
+    .fourthbanner{
+        display: flex;
+        width: 100%;
+        padding: 60px 40px;
+        height: 660px;
+        margin-top: 10px;
+    }
+        .fourthbanner .banner{
+            display: flex;
+            justify-content: center;
+        }
+            .banner .banText{
+                display: flex;
+                flex-direction: column;
+                font-family: 'Samsung Sans Medium';
+                font-size: 80px;
+                width: 500px;    
+            }
+                .banText .description{
+                    font-family: 'Samsung Sans Light';
+                    font-size: 35px;
+                }
+
+/* Spécifications */
+
+    /* Main banner */
+        .mainbanner .coverBanner{
+            background-image: url('../img/picbox1@2x.png');
+        }
+
+    /* Second banner */
+        .secondbanner .coverBanner{
+            background-image: url('../img/picbox2@2x.png');
+        }
+
+    /* Third banner */
+        .thirdbanner .coverBanner{
+            background-image: url('../img/picbox3@2x.png');
+        }
+
+    /* Fourth banner */
+        .fourthbanner .coverBanner{
+            background-image: url('../img/picbox4@2x.png');
+        }
+        .logo.rain{
+            background-image: url('../img/icons8_rain_1.svg');
+        }
